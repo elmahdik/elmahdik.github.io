@@ -1,0 +1,1263 @@
+{
+    "about": {
+        "lastname": "korfed",
+        "firstname": "elmahdi",
+        "photo": "../ek.webp",
+        "birthday": "1991/09/12",
+        "nationality": "français",
+        "situation": "célibataire",
+        "permis": "B",
+        "bio": "Passionné par le web depuis plus de 10 ans, j'ai eu l'opportunité de travailler dans divers domaines en tant que développeur web/mobile - back et front: entreprise privée, laboratoire de recherche publique, startup en tant que cofondateur et pour des clients.<br>J'ai réalisé ce site afin de partager avec vous quelques uns des mes projets web. N'hésitez pas à me contacter si besoin.<br><br>Bonne visite!",
+        "location": {
+            "country": "france",
+            "city": "nice"
+        },
+        "contact": {
+            "phone": "0033686089808",
+            "email": "elmahdi.korfed@gmail.com",
+            "website": "https://elmahdik.github.io",
+            "linkedin": "https://www.linkedin.com/in/elmahdikorfed/",
+            "github": "https://github.com/elmahdik",
+            "resume": "cv-KORFED.pdf"
+        },
+        "job_position": "Développeur web"
+    },
+    "experience": [
+        {
+            "intitule": "Développeur webk",
+            "company": "Pause pro",
+            "date": {
+                "start": "2020/04/01",
+                "end": "2023/11/01"
+            },
+            "type": "indépendant",
+            "missions": [
+                "⊡ Développement d'une extension Google Chrome permettant de récupérer et d'afficher au même endroit des données Blockchain BSC issues de différents sites (NodeJS - Webscrapping)",
+                "⊡ Développement d'une application web permettant d'afficher, chaque jour, des célébrités fêtant leur anniversaire (Web sémantique - SPARQL/RDF - données issues de Wikipédia)",
+                "⊡ Prototype d'application permettant de regrouper différents produits d'assurance possédés par un même assuré et d'en afficher les caractéristiques (NodeJS, HTML, JS, CSS)"
+            ]
+        },
+        {
+            "intitule": "Ingénieur coordination techniques et développement logiciels",
+            "type": "CDD",
+            "company": "CNRS - Centre national de la recherche scientifique",
+            "location": {
+                "city": "Valbonne Sophia Antipolis",
+                "country": "France"
+            },
+            "date": {
+                "start": "2017/06/01",
+                "end": "2019/11/30"
+            },
+            "description": "⇨ Travaux effectués sur le projet WASABI: Web Audio et Web Sémantique agrégées dans le navigateur pour de l'indexation.",
+            "missions": [
+                "⊡ Développement web d'un des premiers Pedalboard au monde en utilisant la Web Audio API, les Composants Web et les dernières fonctionnalités de JavaScript ES6.",
+                "⊡ Reprise du développement de l'application web WASABI contenant plus de 2 millions de chansons nécessitant la récupération de données musicales. Réalisation d'une API RESTFul avec documentation. Projet réalisé en collaboration avec Deezer et IRCAM. Présentation à Paris et Londres.",
+                "⊡ Mise en place de la base de données VirtuosoDB et premières requêtes SPARQL pour rechercher des données RDF.",
+                "⊡ Au-delà du développement pure, j'ai participé également à l'organisation des réunions, la planification des tâches et des livrables du projet."
+            ],
+            "links": [
+                "https://wasabi.i3s.unice.fr/#/search/artist/Michael%20Jackson/album/Thriller/song/Beat%20It",
+                "https://www.youtube.com/watch?v=-iExdePDsPA"
+            ],
+            "skills": [
+                "html",
+                "js",
+                "css",
+                "node.js",
+                "polymer",
+                "web composants",
+                "mongo db",
+                "sparql",
+                "rdf",
+                "elasticsearch",
+                "python",
+                "web audio",
+                "macOS",
+                "windows10"
+            ]
+        },
+        {
+            "intitule": "Ingénieur recherche et développement",
+            "type": "CDD",
+            "company": "INRIA - Institut national de recherche en sciences et technologies du numérique",
+            "location": {
+                "city": "Valbonne Sophia Antipolis",
+                "country": "France"
+            },
+            "date": {
+                "start": "2017/02/01",
+                "end": "2017/05/31"
+            },
+            "description": "⇨ ?",
+            "missions": [
+                "⊡ Étude de l’existant, extraction et mise à jour de données pour DBpedia Historique. Présentation à Lyon et Vienne.",
+                "⊡ Maintenance des applications utilisant DBpedia en production."
+            ],
+            "skills": [
+                "html",
+                "js",
+                "css",
+                "node.js",
+                "mongo db",
+                "sparql",
+                "rdf",
+                "fedora",
+                "macOS",
+                "windows10"
+            ]
+        },
+        {
+            "intitule": "Développeur web/mobile",
+            "type": "Contrat en alternance",
+            "company": "NSP - Net Solution Partner est une TPE éditrice de solutions Web de gestion de la relation client en ligne",
+            "location": {
+                "city": "Valbonne Sophia Antipolis",
+                "country": "France"
+            },
+            "date": {
+                "start": "2015/11/01",
+                "end": "2016/09/31"
+            },
+            "description": "⇨ Correction et amélioration du moteur de recherche du site des pages jaunes Monaco.",
+            "missions": [
+                "⊡ Analyse des besoins, conception, développement, tests, présentation clientèle et mise en production concernant l'optimisation et la correction du moteur de recherche des pages jaunes de Monaco.",
+                "⊡ Développement d’une application mobile Android / RESTful Web services type 'LeBonCoin' avec géolocalisation de produits.",
+                "⊡ Import, traitement et visualisation de données depuis un fichier client Excel."
+            ],
+            "links": [
+                "https://www.pagesjaunesmonaco.com/fr/"
+            ],
+            "missionsDetails": [
+                "1/ Analyse et conception",
+                "1/ 1) Récupérer les besoins du client et les reformuler dans un document de spécifications afin de faire valider le document par le client et commencer le développement",
+                "2/ Présenter au client les fonctionnalités demandées",
+                "2/ 1) S’assurer que les fonctionnalités demandées correspondent bien à la demande clientèle",
+                "3/ Rédiger le document d’estimations de temps de développement par fonctionnalité",
+                "3/ 1) Définir le délai de rendu du projet au client",
+                "4/ Développer les fonctionnalités demandées",
+                "4/ 1) Réaliser les besoins attendu par le client dans les délais impartis",
+                "5/ Rédiger un plan de tests",
+                "5/ 1) Déterminer les différents cas possibles concernant la recherche via le moteur afin d’être sûre que l’application fonctionne",
+                "6/ Valider le plan de tests",
+                "6/ 1) Faire tester les nouvelles fonctionnalités demandés au client afin d’obtenir son accord pour la mise en production",
+                "7/ Mise à jour du site en production"
+            ],
+            "skills": [
+                "html5",
+                "javascript",
+                "css3",
+                "jquery",
+                "php",
+                "coldfusion",
+                "ajax",
+                "json",
+                "sql",
+                "RESTFul Webservices",
+                "android",
+                "phpmyadmin",
+                "mysql",
+                "gestion de projet",
+                "windows",
+                "mac"
+            ]
+        },
+        {
+            "intitule": "Développeur web",
+            "type": "Stage",
+            "company": "NSP - Net Solution Partner",
+            "location": {
+                "city": "Valbonne Sophia Antipolis",
+                "country": "France"
+            },
+            "date": {
+                "start": "2015/09/01",
+                "end": "2015/09/30"
+            },
+            "description": "⇨ Développement WordPress et correction HTML d'emails clientèle.",
+            "missions": [
+                "⊡ Développement d'un site web one page en utilisant le CMS WordPress.",
+                "⊡ Vérification et correction de la structure HTML d'emails clientèle sur les différents webmail et support PC/mobile les plus utilisés du marché."
+            ]
+        },
+        {
+            "intitule": "Développeur web",
+            "type": "Stage",
+            "company": "NSP - Net Solution Partner",
+            "location": {
+                "city": "Valbonne Sophia Antipolis",
+                "country": "France"
+            },
+            "date": {
+                "start": "2014/05/19",
+                "end": "2014/08/28"
+            },
+            "description": "⇨ Permettre aux clients de l'entreprise de pouvoir analyser facilement les retours concernant leurs envois de campagnes e-mailing marketing via la data visualisation.",
+            "missions": [
+                "⊡ Représentation des données du rapport (taux de clic et d'ouverture d'email) sous forme d’éléments graphiques pour une lisibilité plus simple via l'API HighCharts.",
+                "⊡ Intégration d'un outil de recherche et de trie sur les données via le plugin DataTables.",
+                "⊡ Développement d'un module permettant aux clients de connaître quels sont les plateformes les plus utilisées pour la consultation de leurs emails.",
+                "⊡ Développement d'un module permettant aux clients de savoir où leurs emails ont été consultés via un affichage cartographique des données au niveau mondial."
+            ],
+            "links": [
+                "https://www.highcharts.com/",
+                "https://www.mailissimo.com/index.cfm?fuseaction=c.dspHome&subaction=email#analyser"
+            ],
+            "skills": [
+                "html5",
+                "javascript",
+                "css3",
+                "jquery",
+                "coldfusion",
+                "ajax",
+                "json",
+                "sql",
+                "api highcharts",
+                "api highmaps",
+                "windows"
+            ]
+        },
+        {
+            "intitule": "Développeur web",
+            "type": "Stage",
+            "company": "NSP - Net Solution Partner",
+            "location": {
+                "city": "Valbonne Sophia Antipolis",
+                "country": "France"
+            },
+            "date": {
+                "start": "2013/04/02",
+                "end": "2013/07/31"
+            },
+            "description": "⇨ Ajout de nouvelles fonctionnalités au module de gestion de modèles d'emails afin de permettre aux clients de l'entreprise de pouvoir créer et personnaliser des messages e-mailing facilement sans connaissance technique.",
+            "missions": [
+                "⊡ Amélioration du module et mise en place du Responsive Web Design pour la visualisation mobile via les media queries CSS.",
+                "⊡ Création de nombreux modèles d’email ayant chacun une structure graphique HTML différente.",
+                "⊡ Obtention du double diplôme DUT et DUIP à l'issue de ma formation en entreprise."
+            ]
+        },
+        {
+            "intitule": "Développeur web",
+            "type": "Stage",
+            "company": "NSP - Net Solution Partner",
+            "location": {
+                "city": "Valbonne Sophia Antipolis",
+                "country": "France"
+            },
+            "date": {
+                "start": "2012/11/19",
+                "end": "2013/02/15"
+            },
+            "description": "⇨ Développer un module de gestion de modèles d'emails afin de permettre aux clients de l'entreprise de pouvoir créer et personnaliser des messages e-mailing facilement sans connaissance technique.",
+            "missions": [
+                "⊡ Réalisation du cahier des charges fonctionnel pour répondre au besoin.",
+                "⊡ Apprentissage des technologies web jQuery, AJAX, ColdFusion et des méthodes de développement de l'entreprise.",
+                "⊡ Développement du module et intégration dans l'application 'Mailissimo' de l'entreprise.",
+                "⊡ Tests effectués régulièrement via les débogueurs des navigateurs web les plus utilisés du marché et validation par le commercial et l’équipe de l'entreprise."
+            ],
+            "links": [
+                "https://www.mailissimo.com/index.cfm?fuseaction=c.dspHome&subaction=email#creer"
+            ],
+            "environnement": [
+                "macromédia Homesite +",
+                "html5",
+                "javascript",
+                "css3",
+                "jquery",
+                "coldfusion",
+                "ajax",
+                "json",
+                "sql",
+                "microsoft sql server",
+                "windows"
+            ]
+        }
+    ],
+    "formation": [
+        {
+            "title": "master 2 miage",
+            "school": "Université Côte d'Azur",
+            "diplome": "Double diplôme Master 2 MIAGE et MBDS",
+            "domain": "Informatique",
+            "date": {
+                "start": 2015,
+                "end": 2016
+            },
+            "resultat": "Mention Bien",
+            "description": [
+                "MIAGE: Méthodes Informatiques Appliquées à la Gestion des Entreprises.",
+                "MBDS: Mobiquité Base de Données/big data, et intégration de Systèmes."
+            ],
+            "location": {
+                "city": "Sophia Antipolis",
+                "country": "france"
+            },
+            "more": [
+                "double diplôme de master miage et mbds",
+                "miage - méthodes informatiques appliquées à la gestion des entreprises",
+                "mbds - mobiquité base de données/big data, et intégration de systèmes",
+                "serveurs de bases de données et big data",
+                "développement d'applications mobiquitaires",
+                "gestion projet"
+            ]
+        },
+        {
+            "title": "master 1 miage",
+            "date": "2014-2015",
+            "school": {
+                "name": "UNICE",
+                "fullname": "université nice sophia antipolis"
+            },
+            "location": {
+                "city": "Sophia Antipolis",
+                "country": "france"
+            },
+            "notes": [
+                "miage - méthodes informatiques appliquées à la gestion des entreprises",
+                "Management",
+                "Système d'information",
+                "Télécomunication",
+                "Ingenierie des Besoins",
+                "Prog. Avancée"
+            ]
+        },
+        {
+            "title": "licence 3 miage",
+            "date": "2013-2014",
+            "school": {
+                "name": "UNICE",
+                "fullname": "université nice sophia antipolis"
+            },
+            "location": {
+                "city": "Sophia Antipolis",
+                "country": "france"
+            },
+            "notes": [
+                "miage - méthodes informatiques appliquées à la gestion des entreprises",
+                "Sc.Informatique",
+                "Base de données (SQL)",
+                "Gestion de projets",
+                "Entreprise",
+                "Marché",
+                "Comptabilité",
+                "Proba"
+            ]
+        },
+        {
+            "school": "Université Côte d'Azur",
+            "title": "IUT Informatique",
+            "diplome": "Double diplôme DUT et DUIP",
+            "domain": "Informatique",
+            "date": {
+                "start": 2010,
+                "end": 2013
+            },
+            "description": [
+                "DUT informatique",
+                "DUIP informatique"
+            ],
+            "more": [
+                "IUT Institut Universitaire de Technologie - informatique",
+                "IUT de Nice",
+                "Étudiant en DUT informatique",
+                "Prog. Informatique",
+                "VBA",
+                "JAVA",
+                "C/C++",
+                "PYTHON",
+                "ACCESS",
+                "SQL",
+                "PHP",
+                "HTML",
+                "CSS",
+                "JAVASCRIPT"
+            ]
+        },
+        {
+            "school": "Lycée Les Eucalyptus",
+            "title": "Classe Prépa PCSI",
+            "domain": "Classe Préparatoire aux Grandes Écoles - Filière PCSI",
+            "date": {
+                "start": 2009,
+                "end": 2010
+            },
+            "location": {
+                "city": "nice",
+                "country": "france"
+            },
+            "more": [
+                "1re année PCSI - CPGE",
+                "Classe prépa PCSI",
+                "Mathématiques",
+                "Physique",
+                "Chimie",
+                "Sciences de l'Ingénieur"
+            ]
+        },
+        {
+            "title": "BAC S",
+            "school": "Lycée Les Eucalyptus",
+            "diplome": "Baccalauréat S",
+            "date": {
+                "start": 2006,
+                "end": 2009
+            },
+            "location": {
+                "city": "nice",
+                "country": "france"
+            },
+            "more": [
+                "obtention du baccalauréat scientifique spécialité mathématiques option sciences de l'ingénieur"
+            ]
+        }
+    ],
+    "portfolio": [
+        {
+            "type": "enterprise",
+            "projects": [
+                {
+                    "id": "wasabi",
+                    "title": "WASABI",
+                    "src": "./assets/portfolio/entreprises/wasabi/assets/image.webp",
+                    "video": "./assets/portfolio/wasabi/assets/videos/video.mp4",
+                    "link": "https://wasabi.i3s.unice.fr/#/search/artist/Michael%20Jackson/album/Bad/song/Smooth%20Criminal",
+                    "description": "Site web du projet WASABI contenant plus de 2 millions de musiques.",
+                    "description_en": "Website of the WASABI project realized in polymer. It contains over 2 million songs.",
+                    "skills": [
+                        "html",
+                        "javascript",
+                        "polymer",
+                        "css",
+                        "json",
+                        "python",
+                        "nodejs",
+                        "mongodb"
+                    ],
+                    "visible": true
+                },
+                {
+                    "id": "pedalboard",
+                    "title": "Pedalboard",
+                    "src": "./assets/portfolio/entreprises/pedalboard/assets/image.webp",
+                    "video": "./assets/portfolio/pedalboard/assets/videos/video.mp4",
+                    "link": "https://wasabi.i3s.unice.fr/dynamicPedalboard/?bank=Michel&preset=Vampires",
+                    "description": "Développement web d'un des premiers Pedalboard au monde!",
+                    "description_en": "I developed the Pedalboard main GUI and some plugins in web components",
+                    "skills": [
+                        "html",
+                        "javascript",
+                        "css",
+                        "json",
+                        "nodejs",
+                        "web-audio api"
+                    ],
+                    "visible": true
+                },
+                {
+                    "id": "mailissimo",
+                    "title": "mailissimo",
+                    "src": "./assets/portfolio/entreprises/mailissimo/assets/image.webp",
+                    "video": "./assets/portfolio/mailissimo/assets/videos/video.mp4",
+                    "link": "https://www.mailissimo.com/index.cfm?fuseaction=c.dspHome&subaction=email",
+                    "description": "Éditez vos emails en quelques clics.",
+                    "description_en": "J'ai travaillé sur l'outils de gestion de modèle d'email de l'entreprise",
+                    "skills": [
+                        "html",
+                        "javascript",
+                        "css",
+                        "json",
+                        "jquery",
+                        "coldfusion"
+                    ],
+                    "visible": true
+                },
+                {
+                    "id": "juniormiageconcept",
+                    "title": "juniormiageconcept",
+                    "src": "./assets/portfolio/juniormiageconcept/assets/images/image.png",
+                    "video": "./assets/portfolio/juniormiageconcept/assets/videos/video.mp4",
+                    "link": "https://juniormiageconcept.com/",
+                    "description": "Réalisation d'un projet en drupal pour un client de la junior miage concept",
+                    "skills": [
+                        "html",
+                        "javascript",
+                        "css",
+                        "drupal"
+                    ],
+                    "visible": false
+                }
+            ]
+        },
+        {
+            "type": "services",
+            "projects": [
+                {
+                    "id": "flags",
+                    "title": "flags",
+                    "src": "https://img.freepik.com/photos-gratuite/mise-plat-du-globe-pate-modeler-personnes_23-2148630365.jpg?size=338&ext=jpg",
+                    "video": "./assets/portfolio/services/flags/assets/videos/video.mp4",
+                    "link": "./assets/portfolio/services/flags",
+                    "description": "Listen national anthems of the world",
+                    "skills": [
+                        "html",
+                        "javascript",
+                        "css",
+                        "json"
+                    ],
+                    "visible": true
+                },
+                {
+                    "id": "animalssounds",
+                    "title": "animalssounds",
+                    "src": "https://cdn.pixabay.com/photo/2017/11/06/09/53/tiger-2923186_1280.jpg",
+                    "video": "./assets/portfolio/services/animalssounds/assets/videos/video.mp4",
+                    "link": "./assets/portfolio/services/animalssounds",
+                    "description": "Animals sounds",
+                    "skills": [
+                        "html",
+                        "javascript",
+                        "css",
+                        "json"
+                    ],
+                    "visible": true
+                },
+                {
+                    "id": "evologo",
+                    "title": "evologo",
+                    "src": "./assets/portfolio/evologo/assets/images/logo.png",
+                    "video": "./assets/portfolio/evologo/assets/videos/video.mp4",
+                    "link": "./assets/portfolio/evologo",
+                    "description": "Evolution du logo des entreprises à travers le temps.",
+                    "description_fr": "Evolution du logo des entreprises à travers le temps.",
+                    "skills": [
+                        "html",
+                        "javascript",
+                        "css",
+                        "json"
+                    ],
+                    "visible": true
+                },
+                {
+                    "id": "souvenirs",
+                    "title": "90's",
+                    "src": "https://static.vecteezy.com/system/resources/previews/002/716/988/original/old-tv-on-table-with-flat-design-vector.jpg",
+                    "video": "./assets/portfolio/souvenirs/assets/videos/video.mp4",
+                    "link": "./assets/portfolio/souvenirs",
+                    "description": "Souvenirs is a place containing some of my childhood memories.",
+                    "description_fr": "Souvenirs est une site web contenant quelques souvenirs d'enfance.",
+                    "skills": [
+                        "html",
+                        "javascript",
+                        "css",
+                        "json"
+                    ],
+                    "visible": true
+                },
+                {
+                    "id": "enigma",
+                    "title": "enigma",
+                    "src": "https://www.tourisme-isleperigord.com/sites/default/files/styles/fiche_large/public/activites_sportives_culturelles/photos/7242_srt_photo_photo_logo-enigmes-Chateau-Villamblard-redimensionnee-2.jpg?itok=B51iQ5jo",
+                    "video": "./assets/portfolio/enigma/assets/videos/video.mp4",
+                    "link": "./assets/portfolio/enigma",
+                    "description": "Enigma is a website with a lot of enigma.",
+                    "description_en": "Will you be able to solve these enigmas ? 🧐",
+                    "description_fr": "Enigma est une site web composé de nombreux énigmes.",
+                    "skills": [
+                        "html",
+                        "javascript",
+                        "css",
+                        "json"
+                    ],
+                    "visible": true
+                },
+                {
+                    "id": "vipborntoday",
+                    "title": "vip born today",
+                    "src": "https://bulletindescommunes.net/wp-content/uploads/2019/05/Le-Festival-de-Cannes-acce%CC%81le%CC%80re-lactivite%CC%81-touristique-1.jpg",
+                    "video": "./assets/portfolio/vipborntoday/assets/videos/video.mp4",
+                    "link": "./assets/portfolio/vipborntoday",
+                    "description": "Who are these VIPs celebrating their birthday today?",
+                    "description_fr": "Qui sont ces VIP qui fêtent leur anniversaire aujourd'hui?",
+                    "skills": [
+                        "html",
+                        "javascript",
+                        "css",
+                        "json"
+                    ],
+                    "visible": true
+                },
+                {
+                    "id": "zitacions",
+                    "title": "zitacions",
+                    "src": "https://img.lemde.fr/2016/10/12/358/0/2654/1766/664/0/75/0/292b88c_10440-wasx3b.lskh85mi.jpg",
+                    "video": "./assets/portfolio/services/zitacions/assets/videos/video.mp4",
+                    "link": "./assets/portfolio/services/zitacions",
+                    "description": "Do you know these quotes?",
+                    "skills": [
+                        "html",
+                        "javascript",
+                        "css",
+                        "json"
+                    ],
+                    "visible": true
+                },
+                {
+                    "id": "sharelink",
+                    "title": "sharelink",
+                    "src": "./assets/portfolio/sharelink/assets/images/image.webp",
+                    "video": "./assets/portfolio/sharelink/assets/videos/video.mp4",
+                    "link": "./assets/portfolio/sharelink",
+                    "description": "Créez des liens de partage pour les réseaux sociaux!",
+                    "description_en": "Share your link on social networks!",
+                    "skills": [
+                        "html",
+                        "javascript",
+                        "css",
+                        "json"
+                    ],
+                    "visible": false
+                },
+                {
+                    "id": "greetingcards",
+                    "title": "Greeting cards",
+                    "src": "./assets/portfolio/greetingcards/assets/images/image.jpg",
+                    "video": "./assets/portfolio/greetingcards/assets/videos/video.mp4",
+                    "link": "https://yoann-moise.com/projects/greetings/index.php",
+                    "description": "For New Year, Christmas and birthdays, schedule your greeting cards now from our new free collection of virtual cards!",
+                    "description_fr": "Pour la nouvelle année, Noël et les anniversaires, programmez dès maintenant vos cartes de voeux parmi notre nouvelle collection gratuite de cartes virtuelles!",
+                    "skills": [
+                        "html",
+                        "css",
+                        "js",
+                        "php"
+                    ],
+                    "label": "CVP Création de carte de voeux personnalisé",
+                    "date": "décembre 2014 – janvier 2015",
+                    "function": "Créateur/Developpeur web",
+                    "team": [
+                        "yoann moise"
+                    ],
+                    "visible": true
+                },
+                {
+                    "id": "calendarui",
+                    "title": "Calendar",
+                    "src": "./assets/portfolio/calendarui/assets/images/image.gif",
+                    "video": "./assets/portfolio/calendarui/assets/videos/video.mp4",
+                    "link": "./assets/portfolio/calendar-ui",
+                    "description": "Réalisation d'un calendrier en composant web",
+                    "skills": [
+                        "html",
+                        "javascript",
+                        "css"
+                    ],
+                    "visible": false
+                },
+                {
+                    "id": "Thermaind",
+                    "date": "2011 – 2012",
+                    "title": "Fondateur/Développeur.",
+                    "description": "création d'un réseau social utilisant les technologies web Jquery et Ajax (http://thermaind2012.web44.net)",
+                    "team": [],
+                    "visible": false
+                }
+            ]
+        },
+        {
+            "type": "startup",
+            "projects": [
+                {
+                    "id": "Foot-o-bar",
+                    "title": "Foot-o-bar",
+                    "src": "./assets/portfolio/foot-o-bar/assets/images/image.jpg",
+                    "video": "./assets/portfolio/foot-o-bar/assets/videos/video.mp4",
+                    "link": "#",
+                    "description": "Regardez un match de foot au bar le plus proche de chez vous!",
+                    "skills": [
+                        "html",
+                        "javascript",
+                        "css",
+                        "json"
+                    ],
+                    "date": "septembre 2017 – décembre 2018",
+                    "visible": false
+                },
+                {
+                    "id": "hideberg",
+                    "title": "Hideberg",
+                    "src": "./assets/portfolio/hideberg/assets/images/image.webp",
+                    "video": "./assets/portfolio/hideberg/assets/videos/video.mp4",
+                    "link": "https://www.facebook.com/hideberg/",
+                    "description": "Vous recherchez un emploi à l'international? Hideberg est fait pour vous!",
+                    "description_en": "Web development of one of the first help site devoted to international job search!",
+                    "skills": [
+                        "html",
+                        "javascript",
+                        "css",
+                        "json"
+                    ],
+                    "date": "septembre 2017 – décembre 2018",
+                    "visible": false
+                },
+                {
+                    "id": "shummy",
+                    "title": "Shummy",
+                    "src": "./assets/portfolio/shummy/assets/images/image.webp",
+                    "video": "./assets/portfolio/shummy/assets/videos/video.mp4",
+                    "link": "https://www.facebook.com/myshummy/",
+                    "description": "Shummy est une application de partage alimentaire développé pendant l'European Innovation Academy 2015.",
+                    "description_en": "Shummy is a food sharing project developed during an international summer school!",
+                    "function": "développeur web",
+                    "name": "Shummy",
+                    "label": "european innovation academy",
+                    "date": "juil. 2015 - juil. 2015 (2 semaines)",
+                    "ville": "nice, france",
+                    "team": [
+                        "yoann moise"
+                    ],
+                    "objectif": "J'ai participé au développement du site web Shummy lors de l’European Innovation Academy 2015. L’objectif a été de monter une startup en 3 semaines (étude de marché, business plan, développement présentation, investisseurs …) Réalisé avec HTML5, CSS3, JavaScript, jQuery, PHP, SQL",
+                    "description2": [
+                        "J'ai été retenu pour participer en tant que développeur à l'EIA durant le mois de juillet 2015. Il s'agit de la plus grande Summer School entrepreunariale du monde.",
+                        "→ 700 étudiants internationaux",
+                        "→ création d'une startup",
+                        "→ nouvelles innovations informatiques sur le marché en un temps record de 15 jours",
+                        "→ équipes quotidiennement encadrées par une centaine de leaders de l'industrie et des professeurs",
+                        "→ modèle et méthodologies des business accelerateurs de la Silicon Valley",
+                        "→ Google, Amadeus, Rovio, Samsung, Orange...",
+                        "Pour plus d'informations : http: //www.inacademy.eu/ http://unice.fr/fil/service­communication/evenements­1/european­innovation­academy"
+                    ],
+                    "skills": [
+                        "html",
+                        "js",
+                        "css",
+                        "jquery",
+                        "php",
+                        "sql",
+                        "android",
+                        "phpmyadmin",
+                        "mysql"
+                    ],
+                    "visible": false
+                }
+            ],
+            "idea": [
+                "evenz",
+                "choice",
+                "sportfriends",
+                "supermenu",
+                "footobar",
+                "gratisgratis",
+                "touta2euros",
+                "louetonstuff",
+                "1min1astuce",
+                "coffeemeet",
+                "cupidon",
+                "rdv",
+                "musicocaz",
+                "versus",
+                "myvitamins",
+                "picspocket",
+                "randomfood"
+            ]
+        },
+        {
+            "type": "games",
+            "projects": [
+                {
+                    "id": "breakout",
+                    "title": "breakout",
+                    "src": "./assets/portfolio/games/breakout/assets/images/image.png",
+                    "video": "./assets/portfolio/breakout/v2/assets/videos/video.mp4",
+                    "link": "./assets/portfolio/breakout/v2",
+                    "description": "Breakout ! break all the bricks !",
+                    "description_fr": "Jeu du célèbre casse-brique ! détruisez toutes les briques !",
+                    "skills": [
+                        "html",
+                        "javascript",
+                        "css"
+                    ],
+                    "date": "novembre 2021",
+                    "visible": true
+                },
+                {
+                    "id": "db2048",
+                    "title": "DB 2048",
+                    "src": "https://cdn.shopify.com/s/files/1/0262/4516/9245/products/image_9929b198-46c3-41b3-aa1e-7a04393cb7aa_1024x1024.jpg?v=1595867125",
+                    "video": "./assets/portfolio/db2048/assets/videos/video.mp4",
+                    "link": "./assets/portfolio/db2048",
+                    "description": "Dragon Ball version of the game 2048. The goal is to merge all similar cards.",
+                    "description_fr": "Jeu 2048 version \"Dragon Ball\". Le but est de fusionner toutes les cartes similaires.",
+                    "skills": [
+                        "html",
+                        "javascript",
+                        "css",
+                        "json"
+                    ],
+                    "date": "juillet 2015",
+                    "visible": true
+                },
+                {
+                    "id": "connect4",
+                    "title": "Connect 4",
+                    "src": "./assets/portfolio/connect4/assets/images/image.webp",
+                    "video": "./assets/portfolio/connect4/assets/videos/video.mp4",
+                    "link": "./assets/portfolio/connect4",
+                    "description": "Play the famous Connect 4 game now!",
+                    "description_fr": "Jouez au célèbre jeu du Puissance 4 dès maintenant!",
+                    "skills": [
+                        "html",
+                        "javascript",
+                        "css",
+                        "json"
+                    ],
+                    "visible": true
+                },
+                {
+                    "id": "kald",
+                    "title": "kald",
+                    "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlXHdQJclylHD47xWrxLV35P9H0GXIhPIyog&usqp=CAU",
+                    "video": "./assets/portfolio/kald/assets/videos/video.mp4",
+                    "link": "./assets/portfolio/kald",
+                    "description": "Do you have a better memory than this monkey? Good luck!",
+                    "description_fr": "Avez-vous une meilleure mémoire que ce singe? Bonne chance!",
+                    "skills": [
+                        "html",
+                        "javascript",
+                        "css",
+                        "json"
+                    ],
+                    "label": "kald - Tester votre mémoire eidétique",
+                    "date": "décembre 2014",
+                    "visible": true
+                },
+                {
+                    "id": "memory",
+                    "title": "Memory",
+                    "src": "https://i.etsystatic.com/11794705/r/il/99c12b/2436514677/il_570xN.2436514677_nkxv.jpg",
+                    "video": "./assets/portfolio/memory/assets/videos/video.mp4",
+                    "link": "./assets/portfolio/memory",
+                    "description": "Practice your memory by finding the pairs!",
+                    "description_fr": "Exercez votre mémoire en retrouvant les paires d'images!",
+                    "skills": [
+                        "html",
+                        "javascript",
+                        "css",
+                        "json"
+                    ],
+                    "visible": true
+                },
+                {
+                    "id": "tictactoe",
+                    "title": "Tic Tac Toe",
+                    "src": "./assets/portfolio/tictactoe/assets/images/image.webp",
+                    "video": "./assets/portfolio/tictactoe/assets/videos/video.mp4",
+                    "link": "./assets/portfolio/tictactoe",
+                    "description": "Adaptation du célèbre jeu de réflexion... Morpion!",
+                    "skills": [
+                        "html",
+                        "javascript",
+                        "css"
+                    ],
+                    "visible": false
+                },
+                {
+                    "id": "rps",
+                    "title": "Rock Paper Scissors",
+                    "src": "./assets/portfolio/rps/assets/images/image.webp",
+                    "video": "./assets/portfolio/rps/assets/videos/video.mp4",
+                    "link": "./assets/portfolio/rps",
+                    "description": "Pierre Feuille Ciseaux!",
+                    "skills": [
+                        "html",
+                        "javascript",
+                        "css"
+                    ],
+                    "visible": false
+                }
+            ]
+        },
+        {
+            "type": "freelance",
+            "projects": [
+                {
+                    "id": "marchetti",
+                    "title": "marchetti",
+                    "src": "./assets/portfolio/marchetti/assets/images/image.webp",
+                    "video": "./assets/portfolio/marchetti/assets/videos/video.mp4",
+                    "link": "./assets/portfolio/marchetti",
+                    "description": "Développement du site de métiers d'art marchetti.",
+                    "url": "http://marchetti.chez.com",
+                    "date": "juillet 2015",
+                    "skills": [
+                        0,
+                        1,
+                        2
+                    ],
+                    "visible": false
+                },
+                {
+                    "id": "autoecole2000",
+                    "title": "auto ecole 2000",
+                    "src": "./assets/portfolio/autoecole2000/assets/images/image.webp",
+                    "video": "./assets/portfolio/autoecole2000/assets/videos/video.mp4",
+                    "link": "./assets/portfolio/autoecole2000",
+                    "description": "Développement du site web de l'auto école 2000",
+                    "date": "juillet 2017",
+                    "skills": [
+                        "html",
+                        "javascript",
+                        "css"
+                    ],
+                    "visible": false
+                },
+                {
+                    "id": "Pick And Ball",
+                    "date": "janvier 2016 – juin 2016",
+                    "description": "Développement d’une application web/mobile hybride pour un client permettant la recherche de terrain de basket autour de soi. Réalisé avec HTML5, CSS3, JavaScript, jQuery, PHP, SQL",
+                    "visible": false
+                },
+                {
+                    "id": "ISUP_Junior",
+                    "date": "janvier 2015",
+                    "description": "Développement du site de la junior entreprise de l’Institut de Statistiques de l'Université de Paris (accueil, valeurs, services, références, équipe, contact).Réalisé avec HTML5, CSS3, JavaScript, jQuery, JEE, SQL",
+                    "visible": false
+                }
+            ]
+        },
+        {
+            "type": "universitaire",
+            "projects": [
+                {
+                    "id": "e-bio - projet d'année",
+                    "date": "janvier 2016 – juin 2016",
+                    "title": "Rédacteur, Developpeur web",
+                    "description": "Rédaction du CdCF et développement d’une application web permettant la gestion des droits utilisateurs, des produits et des commandes effectués pour l’association AMAP de Garbejaire - Réalisé avec HTML5, CSS3, JavaScript, jQuery, PHP, Laravel, SQL",
+                    "team": [
+                        "hassatou diallo",
+                        "kevin garro"
+                    ],
+                    "visible": false
+                },
+                {
+                    "id": "gestion comptes bancaires - projet d'étude",
+                    "date": "janvier 2016",
+                    "title": "Developpeur web",
+                    "description": "Réalisation d’une application web permettant la gestion des comptes bancaires courant/épargne. Réalisé avec HTML5, CSS3, JavaScript, jQuery, JEE, SQL",
+                    "team": [
+                        "kevin garro"
+                    ],
+                    "visible": false
+                },
+                {
+                    "id": "SmartHealth",
+                    "date": "janvier 2015 – juin 2015",
+                    "title": "Concepteur/Intégrateur/Developpeur web Front­End",
+                    "description": "Nous avons élaboré le projet Smart Health comme notre 1er travail utilisant des objets connectés et proposant une appli web, une appli android mobile et une appli android wear. Smart Health est un coach sportif. Il collecte des données grâces aux capteurs d'une montre connectée et d'un...",
+                    "team": [
+                        "yoann moise",
+                        "fabrice jauvat",
+                        "thibaut linares"
+                    ],
+                    "visible": false
+                },
+                {
+                    "id": "XPLOR L'explorateur de fichier à plugins",
+                    "date": "décembre 2014",
+                    "title": "Chef de projet/Développeur.",
+                    "description": "Réalisation d'un explorateur de fichier à plugins en java",
+                    "team": [
+                        "florent comba",
+                        "ibrahima diarra"
+                    ],
+                    "visible": false
+                },
+                {
+                    "id": "Exploitation de donnée XML",
+                    "date": "octobre 2014 – janvier 2015",
+                    "title": "Chef de projet/Développeur.",
+                    "description": "Il s'agit d'exploiter des milliers de données issues d'un fichier XML et de les afficher sous forme de donnée graphique, tableau etc... afin d'en faire une analyse concrète",
+                    "team": [
+                        "hassatou diallo",
+                        "zalbiya ali kari"
+                    ],
+                    "visible": false
+                },
+                {
+                    "id": "Application Livre­Jeux dont VOUS êtes le Héros",
+                    "date": "février 2014 – mai 2014",
+                    "title": "Chef de projet/Développeur.",
+                    "description": "Réalisation d'une application java/web du livre jeux dont vous êtes le héros",
+                    "team": [
+                        "kevin auchoybur",
+                        "mohamed niang",
+                        "wissam elhadi"
+                    ],
+                    "visible": false
+                },
+                {
+                    "id": "Application Web de gestion de liste de cadeaux",
+                    "date": "septembre 2013 – novembre 2013",
+                    "title": "Rédacteur partie besoins/techniques du CdCF",
+                    "description": "Cahier des charges fonctionnel portant sur la réalisation d’une application Web permettant de gérer des listes de cadeaux. Le but de ce projet est de fournir un service complet de gestion de liste de cadeaux gratuitement et au plus grand nombre de personnes. L’application propose un aspect communautaire, un...",
+                    "team": [
+                        "yoann moise",
+                        "florian massa",
+                        "zalbiya ali kari"
+                    ],
+                    "visible": false
+                },
+                {
+                    "id": "Cube 3D en CSS3",
+                    "date": "octobre 2013 – novembre 2013",
+                    "title": "Développeur/Rédacteur.",
+                    "description": "Essai de nouvelles fonctionnalités inclues dans CSS3 dont celle qui permet la gestion de la 3D. Ce projet présente donc un cube 3D en CSS3, avec image et interaction.",
+                    "team": [
+                        "yoann moise",
+                        "florian massa",
+                        "aurore dechamps"
+                    ],
+                    "link": "https://www.yoann-moise.com/projects/cube/index.html",
+                    "visible": false
+                },
+                {
+                    "id": "Himalaya",
+                    "date": "2011 – 2012",
+                    "title": "Développeur.",
+                    "description": "Himalaya le jeu de société était le projet d'année +de 150h de travail",
+                    "team": [],
+                    "visible": false
+                },
+                {
+                    "id": "Vecteur",
+                    "date": "2011 – 2012",
+                    "title": "Développeur.",
+                    "description": "Logiciel de calcul et création de vecteurs mathématique",
+                    "team": [
+                        "mathieu lisi"
+                    ],
+                    "visible": false
+                },
+                {
+                    "id": "Lego 3DS Max",
+                    "date": "2011 – 2012",
+                    "title": "Développeur.",
+                    "description": "modélisation de nous même en version lego",
+                    "team": [],
+                    "visible": false
+                },
+                {
+                    "id": "Initiation au développement de jeux vidéos",
+                    "date": "2011 – 2012",
+                    "title": "Développeur.",
+                    "description": "Fait en C# le but était de contrôler une voiture avec une manette xbox",
+                    "team": [],
+                    "visible": false
+                },
+                {
+                    "id": "Drapeaux G",
+                    "date": "2011 – 2012",
+                    "title": "Développeur.",
+                    "description": "développement d'une application JAR en JAVA sous le logiciel Eclipse permettant l'affichage de la liste des pays du monde ainsi que leurs drapeaux",
+                    "team": [],
+                    "visible": false
+                },
+                {
+                    "id": "E-commerce",
+                    "date": "2011 – 2012",
+                    "title": "Développeur.",
+                    "description": "création d'un site d'e-commerce de vente d’œuvres d'art virtuelle en HTML, PHP, CSS et MySql",
+                    "team": [
+                        "mathieu lisi"
+                    ],
+                    "visible": false
+                },
+                {
+                    "id": "Annonce+",
+                    "date": "2011 – 2012",
+                    "title": "Développeur.",
+                    "description": "élaboration d'un projet axé sur la gestion d'annonces en ligne depuis son analyse en conception, via Visual Paradigm for UML, jusqu'à son développement web",
+                    "team": [
+                        "mathieu lisi"
+                    ],
+                    "visible": false
+                },
+                {
+                    "id": "Suivi d'activité sportif",
+                    "date": "2010 – 2011",
+                    "title": "Développeur/Rédacteur.",
+                    "description": "création d'une application sous Microsoft Access permettant le suivi d'activité sportif ainsi que les formulaires associés en utilisant Visual Basic et SQL",
+                    "team": [
+                        "yoann moise",
+                        "alexis fourier"
+                    ],
+                    "visible": false
+                },
+                {
+                    "id": "Geolocalisation d'un serveur web",
+                    "date": "2010 – 2011",
+                    "title": "Développeur.",
+                    "description": "intégration de cartes géographiques permettant la localisation d'un serveur web en C++ et HTML",
+                    "team": [],
+                    "visible": false
+                }
+            ]
+        }
+    ],
+    "skills": {
+        "front": [
+            "html",
+            "css",
+            "javascript",
+            "jquery",
+            "rdf",
+            "composants web (es modules)",
+            "reactJS",
+            "Polymer",
+            "pwa",
+            "ajax",
+            "json",
+            "xml"
+        ],
+        "back": [
+            "NODE JS",
+            "PYTHON",
+            "PHP",
+            "COLDFUSION",
+            "SQL",
+            "SPARQL",
+            "jee"
+        ],
+        "bdd": [
+            "MySQL",
+            "Modèle relationnel",
+            "PhpMyAdmin",
+            "Access",
+            "NoSQL",
+            "Oracle",
+            "MongoDB",
+            "VirtuosoDB",
+            "Hadoop"
+        ],
+        "frameworks": [
+            "jquery ui",
+            "polymer",
+            "vue.js",
+            "react.js",
+            "Grails",
+            "Laravel"
+        ],
+        "programmationObjetImperative": [
+            "java",
+            "c",
+            "c#",
+            "c++",
+            "vb"
+        ],
+        "mobile": [
+            "android",
+            "ios swift"
+        ],
+        "architecture": [
+            "MVC"
+        ],
+        "technos": [
+            "elasticsearch",
+            "api de services web avec nodeJS",
+            "RESTFul PHP/COLDFUSION -> JSON",
+            "git",
+            "composants web"
+        ],
+        "réseauxEtcom": [
+            "TCP/IP",
+            "HTTP"
+        ],
+        "environment": {
+            "codeeditor": [
+                "Visual Studio Code",
+                "Sublime Text",
+                "Notepad++",
+                "Netbeans",
+                "Macromédia Homesite +",
+                "Eclipse",
+                "Android Studio"
+            ],
+            "bureautique": [
+                "MS word",
+                "Excel",
+                "Power Point",
+                "OpenOffice"
+            ],
+            "os": [
+                "windows",
+                "linux",
+                "mac"
+            ],
+            "modelisation": [
+                "Visual Paradigm for UML",
+                "3ds Max"
+            ]
+        },
+        "fonctionnellesEtmetiers": [
+            "analyse et spécification des besoins",
+            "méthodes de conception",
+            "UML",
+            "OMGL",
+            "agile",
+            "travail en cycle itératif",
+            "développement",
+            "tests",
+            "présentation clientèle",
+            "mise en production",
+            "management",
+            "gestion de projet",
+            "environnement économique",
+            "gestion d'entreprise",
+            "droits informatiques"
+        ],
+        "langues": [
+            {
+                "name": "français",
+                "level": "maternelle"
+            },
+            {
+                "name": "anglais",
+                "level": "technique"
+            },
+            {
+                "name": "espagnol",
+                "level": "notions"
+            },
+            {
+                "name": "arabe",
+                "level": "notions"
+            }
+        ],
+        "certifications": [
+            {
+                "id": "911bae43c4f24d4b88ab63205af1b352",
+                "name": "HTML5.1x: HTML5 Part 1: HTML5 Coding Essentials and Best Practices",
+                "url": "https://courses.edx.org/certificates/911bae43c4f24d4b88ab63205af1b352",
+                "date": "2015/12/08"
+            }
+        ]
+    },
+    "qualities": [
+        "résilient",
+        "impliqué",
+        "créatif",
+        "rigoureux",
+        "méthodique",
+        "sérieux",
+        "motivé",
+        "autonome",
+        "passionné"
+    ],
+    "hobbies": [
+        "web",
+        "voyages",
+        "basketball",
+        "développement personnel",
+        "pop culture 80-90",
+        "jeux d'échecs"
+    ]
+}

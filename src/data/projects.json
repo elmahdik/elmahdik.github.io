@@ -1,12 +1,20 @@
 [
     {
-        "label": "cine8090",
-        "description": "Watch movies trailer from 80-90's | 🎬 🥇",
+        "label": "kald",
+        "description": "Do you have a better memory than this monkey? Good luck! | 🙈 🙉",
         "skills": [
-            "angular",
+            "javascript"
+        ]
+    },
+    {
+        "label": "japanim89",
+        "description": "Watch recent movies trailers | 🎬 🥇",
+        "skills": [
+            "react",
+            "nextjs",
             "typescript",
-            "scss",
-            "nodejs"
+            "tailwindcss",
+            "tmbd-api"
         ]
     },
     {
@@ -35,6 +43,16 @@
             "html",
             "css",
             "javascript"
+        ]
+    },
+    {
+        "label": "cine8090",
+        "description": "Watch movies trailers from 80-90's | 🎬 🥇",
+        "skills": [
+            "angular",
+            "typescript",
+            "scss",
+            "nodejs"
         ]
     },
     {
@@ -114,13 +132,6 @@
     {
         "label": "enigma",
         "description": "Will you be able to solve these enigmas? | 🧐",
-        "skills": [
-            "javascript"
-        ]
-    },
-    {
-        "label": "kald",
-        "description": "Do you have a better memory than this monkey? Good luck! | 🙈 🙉",
         "skills": [
             "javascript"
         ]
