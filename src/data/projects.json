@@ -1,9 +1,11 @@
 [
     {
-        "label": "kald",
-        "description": "Do you have a better memory than this monkey? Good luck! | 🙈 🙉",
+        "label": "solidjs-retrogame",
+        "description": "SolidJS-Retrogame is a retro game platform developed with the SolidJS library | 🎮 🕹 😎",
         "skills": [
-            "javascript"
+            "solidjs",
+            "sass",
+            "json"
         ]
     },
     {
@@ -34,6 +36,13 @@
             "astro",
             "react",
             "typeScript"
+        ]
+    },
+    {
+        "label": "kald",
+        "description": "Do you have a better memory than this monkey? Good luck! | 🙈 🙉",
+        "skills": [
+            "javascript"
         ]
     },
     {
