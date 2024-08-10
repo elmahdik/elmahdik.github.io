@@ -54,6 +54,14 @@ const myFade = {
 		<link rel="icon" type="image/svg+xml" href="/logo/icon_16.ico" />
 		<meta name="generator" content={Astro.generator} />
 		<ViewTransitions />
+
+		<script type="text/javascript">
+			// Vérifie si l'utilisateur est sur GitHub Pages
+			if (window.location.hostname === "elmahdik.github.io" || window.location.hostname.endsWith(".github.io")) {
+				// Redirige vers Netlify si l'utilisateur est sur GitHub Pages
+				window.location.href = "https://elmahdik.netlify.app";
+			}
+		</script>
 	</head>
 	<body>
 		<!-- <main transition:animate={myFade}> -->
