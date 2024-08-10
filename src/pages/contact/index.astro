@@ -8,16 +8,17 @@ import './style.scss';
         <input type="email" name="email" placeholder="Email" required>
         <textarea placeholder="Message" name="message" required></textarea>
         <button id="btn-submit">send message</button>
-        <nav>
+        <!-- <nav>
           <a href="https://linkedin.com/in/elmahdikorfed" target="_blank">linkedin</a>
           <a href="https://github.com/elmahdik" target="_blank">github</a>
           <a href="mailto:elmahdi.korfed+pro@gmail.com" target="_blank">mail</a>
-        </nav>
+        </nav> -->
     </form>
 </main>
 
 <script>
   import { actions } from "astro:actions";
+  import emailjs from '@emailjs/browser';
   // @ts-ignore
   import confetti from 'canvas-confetti';
   confetti();
@@ -46,5 +47,3 @@ import './style.scss';
      if (error) console.error(error);
    })
  </script>
-
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
