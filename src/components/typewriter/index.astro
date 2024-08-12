@@ -6,5 +6,6 @@ const { text } = Astro.props
 
 import './style.scss'
 ---
-<p class="typewriter">{text.split('').map((c,i) =><span>{c.trim() ? c : "\u00A0"}</span>)}</p>
+<!-- <p class="typewriter">{text.split('').map((c,i) =><span>{c.trim() ? c : "\u00A0"}</span>)}</p> -->
+<p class="typewriter">{text}</p>
 
