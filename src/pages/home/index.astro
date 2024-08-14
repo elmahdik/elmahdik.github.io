@@ -9,6 +9,7 @@ const sentence="Welcome."
 ---
 <main id="main-skeleton" class="hidden">
 	<p>I warned you ... 💀</p>
+	<img id="img-bat" src="bat.gif" />
 	<img id="img-skeleton" src="skeleton.gif" />
 	<audio id="audio-music" controls autoplay loop>
 		<source src="audio.ogg" type="audio/ogg">
@@ -19,7 +20,7 @@ const sentence="Welcome."
 <main id="home">
 	<a href="/" class="fadeIn" data-aos="zoom-out" data-aos-duration=1500>{firstname.split('').map(e=><span>{e}</span>)} {lastname.split('').map(e=><span>{e}</span>)}</a>
 	<p class="fadeIn" data-aos="zoom-out" data-aos-delay=1500 data-aos-duration=1000>{sentence.split('').map(e=><span>{e}</span>)}</p>
-	<button id='btn-surprise'>👉 please don't click here !</button>
+	<button id='btn-surprise' data-aos="zoom-out" data-aos-delay=5000 data-aos-duration=5000>👉  Please don't click here</button>
 </main>
 
 <script>
