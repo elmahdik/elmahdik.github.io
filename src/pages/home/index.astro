@@ -24,14 +24,14 @@ const sentence="Welcome."
 
 <script>
 	let btnSurprise = document.querySelector('#btn-surprise');
-	let audioMusic = document.querySelector('#audio-music');
+	let audioMusic =  document.querySelector('#audio-music') as HTMLVideoElement;
 
 	const showSkeleton = () => {
 		let imgSkeleton = document.querySelector('#main-skeleton');
-		imgSkeleton.classList.remove('hidden');
-		btnSurprise.classList.add('hidden');
-		audioMusic.play()
+		imgSkeleton?.classList.remove('hidden');
+		btnSurprise?.classList.add('hidden');
+		audioMusic?.play();
 	}
 
-	btnSurprise.addEventListener('click', ()=> showSkeleton());
+	btnSurprise?.addEventListener('click', ()=> showSkeleton());
 </script>
