@@ -15,7 +15,9 @@
     font-size: 32px;
     color: var(--color-gray);
 }
-
+.fadeIn {
+    text-align: center;
+}
 .fadeIn span {
     opacity: 0;
     transform: translateY(30px);
@@ -37,5 +39,43 @@
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+#btn-surprise:hover {
+    background-color: red;
+    box-shadow: 0px 2px 4px #333;
+}
+#btn-surprise {
+    box-shadow: 0px 1px 2px #000;
+    background-color: darkred;
+    color: #fff;
+    padding: 20px;
+    margin: 40px;
+    // position: absolute;
+    bottom: 0px;
+    right: 0px;
+    border-radius: 8px;
+    transition: 0.3s;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+#main-skeleton {
+    border: 50px solid #282b3d;
+    background: linear-gradient(180deg, darkblue, #fff);
+    p {
+        color: #fff;
+        font-size: 36px;
+        font-style: oblique;
+    }
+    img {
+        filter: drop-shadow(0.5rem 0 0.75rem white);
+        width: 70%;
+        margin-bottom: 50px;
     }
 }
