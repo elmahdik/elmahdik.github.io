@@ -7,32 +7,7 @@ const lastname="Korfed"
 const sentence="Welcome."
 
 ---
-<main id="main-skeleton" class="hidden">
-	<p>I warned you ... 💀</p>
-	<img id="img-bat" src="bat.gif" />
-	<img id="img-skeleton" src="skeleton.gif" />
-	<audio id="audio-music" controls autoplay loop>
-		<source src="audio.ogg" type="audio/ogg">
-		<source src="audio.mp3" type="audio/mpeg">
-		Your browser does not support the audio element.
-	  </audio>
-</main>
 <main id="home">
 	<a href="/" class="fadeIn" data-aos="zoom-out" data-aos-duration=1500>{firstname.split('').map(e=><span>{e}</span>)} {lastname.split('').map(e=><span>{e}</span>)}</a>
 	<p class="fadeIn" data-aos="zoom-out" data-aos-delay=1500 data-aos-duration=1000>{sentence.split('').map(e=><span>{e}</span>)}</p>
-	<button id='btn-surprise' data-aos="zoom-out" data-aos-delay=5000 data-aos-duration=5000>👉  Please don't click here</button>
 </main>
-
-<script>
-	let btnSurprise = document.querySelector('#btn-surprise');
-	let audioMusic =  document.querySelector('#audio-music') as HTMLVideoElement;
-
-	const showSkeleton = () => {
-		let imgSkeleton = document.querySelector('#main-skeleton');
-		imgSkeleton?.classList.remove('hidden');
-		btnSurprise?.classList.add('hidden');
-		audioMusic?.play();
-	}
-
-	btnSurprise?.addEventListener('click', ()=> showSkeleton());
-</script>
