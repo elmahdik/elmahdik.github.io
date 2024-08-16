@@ -1,10 +1,8 @@
 .link-card {
-  background-color: var(--color-black);
-  border: 1px solid var(--color-white);
-  filter: drop-shadow(0px 2px 1px #ccc);
-  width: calc(20% - 40px);
-  margin: 20px;
-  padding: 20px;
+  background-color: var(--color-white);
+  width: calc(20% - 60px);
+  margin: 30px;
+  padding: 30px;
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -20,15 +18,15 @@
   flex-wrap: wrap;
 }
 .link-card ul li {
-  border: 1px dashed var(--color-white);
+  border: 1px dashed var(--color-black);
   color: var(--color-gray);
   font-size: 12px;
   padding: 4px;
   text-transform: lowercase;
 }
 .link-card h2 {
-  color: var(--color-white);
-  border-bottom: 2px dashed var(--color-white);
+  color: var(--color-black);
+  border-bottom: 2px dashed var(--color-black);
   font-size: 22px;
   padding: 10px 0px;
   margin-bottom: 20px;
@@ -41,11 +39,10 @@
 }
 
 .link-card img {
-  border: 1px solid var(--color-white);
-  filter: drop-shadow(0 0 0.75rem #222);
+  // border: 1px solid var(--color-white);
+  filter: drop-shadow(0 0 0.5rem var(--color-black));
   max-width: 100%;
   height: 200px;
-  padding: 10px;
   width: fit-content;
   object-fit: contain;
   align-self: center;
@@ -62,7 +59,7 @@
 }
 .link-card nav a {
   background-color: var(--color-black);
-  border: 1px solid var(--color-white);
+  border: 1px solid var(--color-black);
   color: var(--color-white);
   flex: 1;
   font-size: 12px;
