@@ -1,51 +1,54 @@
 .link-card {
-  background-color: var(--color-white);
-  width: calc(20% - 60px);
-  margin: 30px;
-  padding: 30px;
+  // background-color: var(--color-white);
+  border: 1px solid var(--color-white);
+  width: calc(25% - 8%);
+  margin: 4%;
+  padding: 10px;
   position: relative;
   display: flex;
-  justify-content: space-between;
+  // justify-content: space-between;
   flex-direction: column;
-  transition: 0.3s;
+  // transition: 0.3s;
 }
-.link-card ul {
-  display: flex;
-  list-style: none;
-  justify-content: center;
-  gap: 10px;
-  margin-bottom: 20px;
-  flex-wrap: wrap;
-}
-.link-card ul li {
-  border: 1px dashed var(--color-black);
-  color: var(--color-gray);
-  font-size: 12px;
-  padding: 4px;
-  text-transform: lowercase;
-}
+// .link-card ul {
+//   display: flex;
+//   list-style: none;
+//   justify-content: center;
+//   gap: 10px;
+//   margin-bottom: 20px;
+//   flex-wrap: wrap;
+// }
+// .link-card ul li {
+//   border: 1px dashed var(--color-black);
+//   color: var(--color-gray);
+//   font-size: 12px;
+//   padding: 4px;
+//   text-transform: lowercase;
+// }
 .link-card h2 {
-  color: var(--color-black);
-  border-bottom: 2px dashed var(--color-black);
+  color: var(--color-white);
+  // border-bottom: 2px dashed var(--color-black);
   font-size: 22px;
-  padding: 10px 0px;
-  margin-bottom: 20px;
-  text-align: center;
+  padding: 10px;
+  text-align: right;
+  font-weight: bold;
 }
 .link-card p {
-  color: var(--color-gray);
+  color: var(--color-white);
   font-size: 14px;
-  margin-bottom: 20px;
+  padding: 10px;
 }
 
 .link-card img {
-  // border: 1px solid var(--color-white);
-  filter: drop-shadow(0 0 0.5rem var(--color-black));
+  border: 1px solid var(--color-white);
   max-width: 100%;
-  height: 200px;
+  max-height: 200px;
+  margin: 10px 0px;
   width: fit-content;
   object-fit: contain;
+  justify-self: flex-start;
   align-self: center;
+  vertical-align: top;
 }
 .link-card nav {
   display: flex;
@@ -54,13 +57,13 @@
 }
 
 .link-card nav a:hover {
-  background-color: var(--color-white);
-  color: var(--color-black);
+  background-color: var(--color-black);
+  color: var(--color-white);
 }
 .link-card nav a {
-  background-color: var(--color-black);
-  border: 1px solid var(--color-black);
-  color: var(--color-white);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-white);
+  color: var(--color-black);
   flex: 1;
   font-size: 12px;
   padding: 10px;

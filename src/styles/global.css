@@ -1,7 +1,7 @@
 :root {
-  --color-black: #282b3d; /* #282b3d; - 3f51b5 */
-  --color-white: #eee;
-  --color-gray: #555;
+  --color-black: #fafafa; /* #282b3d; - 3f51b5 */
+  --color-white: #282b3d;
+  --color-gray: #999;
   --accent: 10, 58, 234;
   --accent-light: 224, 204, 250;
   --accent-dark: 49, 10, 101;
