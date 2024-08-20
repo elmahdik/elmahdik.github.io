@@ -18,10 +18,10 @@ import './style.scss';
   import { actions } from "astro:actions";
   import emailjs from "@emailjs/browser";
   // @ts-ignore
-  import confetti from "canvas-confetti";
+  // import confetti from "canvas-confetti";
 
   emailjs.init(import.meta.env.PUBLIC_EMAIL_JS);
-  confetti();
+  // confetti();
 
   let OPERATION_CHECK: any;
   let answer = document.querySelector("#input-answer") as HTMLFormElement;
@@ -57,7 +57,7 @@ import './style.scss';
           )
           .then(() => {
             form.reset();
-            confetti();
+            // confetti();
             alert("Message sent.");
           })
           .catch((err: string) => console.log(err));
