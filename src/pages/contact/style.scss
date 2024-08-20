@@ -37,7 +37,7 @@ form {
 }
 input::placeholder,
 textarea::placeholder {
-  color: var(--color-white);
+  color: #888;
 }
 
 input,
@@ -51,6 +51,22 @@ textarea {
 }
 textarea {
   min-height: 100px;
+}
+form div {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 4px;
+}
+form span {
+  padding: 4px;
+  display: inline-block;
+}
+#input-answer {
+  border: none;
+  padding: 16px;
+  width: 100px;
+  // text-align: center;
 }
 
 #contact button:hover {
@@ -66,7 +82,6 @@ textarea {
   font-size: 16px;
   text-transform: uppercase;
   cursor: pointer;
-  align-self: flex-end;
 }
 
 .p-title {

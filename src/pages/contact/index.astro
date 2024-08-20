@@ -2,43 +2,16 @@
 import './style.scss';
 ---
 <main id="contact">
-    <p class="p-title"><i class="fas fa-envelope"></i></p>
+    <!-- <p class="p-title"><i class="fas fa-envelope"></i></p> -->
     <form method="POST" name="contact" id="form_contact">
-        <input type="text" name="name" placeholder="Name" required>
-        <input type="email" name="email" placeholder="Email" required>
-        <textarea placeholder="Message" name="message" required></textarea>
-        <button id="btn-submit">send</button>
+        <input type="text" name="name" placeholder="Name *" required>
+        <input type="email" name="email" placeholder="Email *" required>
+        <textarea placeholder="Write your message" name="message" required></textarea>
+        <div>
+          <span>Please verify you are a human 👉</span>
+          <input type="text" placeholder="Answer" id="input-answer" name="answer" />
+          <button id="btn-submit">send</button>
+        </div>
     </form>
 </main>
-
-<script>
-  import { actions } from "astro:actions";
-  import emailjs from '@emailjs/browser';
-  // @ts-ignore
-  import confetti from 'canvas-confetti';
-  confetti();
-
-  emailjs.init('Xt5kvG1KQ0QbFg03l');
-
-  const form = document.querySelector('#form_contact') as HTMLFormElement;
-   form.addEventListener('submit', async(e)=>{
-    e.preventDefault();
-    const formData = new FormData(form);
-    const {data, error} = await actions.sendEmail(formData);
-    if (data) {
-      // email js
-      const serviceID='default_service';
-      const templateID='template_ptculdh';
-      
-      emailjs
-      .send(serviceID,templateID, data.success)
-      .then(()=> {
-        form.reset();
-        confetti();
-        alert('Message envoyé. Merci !');
-      })
-      .catch((err : string) =>console.log(err))
-     }
-     if (error) console.error(error);
-   })
- </script>
+<script src="./main.ts"></script>
