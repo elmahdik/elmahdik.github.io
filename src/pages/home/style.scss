@@ -25,7 +25,6 @@
     display: inline-block;
     // letter-spacing: 1rem;
 }
-
 @for $i from 2 through 14 {
     .fadeIn span:nth-of-type(#{$i}) {
         $duration: math.div($i - 1, 10);
@@ -39,5 +38,24 @@
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+.span-hand {
+    opacity: 1 !important;
+    animation-name: greetings !important;
+    animation-iteration-count: infinite !important;
+    animation-duration: 2s !important;
+}
+
+@keyframes greetings {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(-30deg);
+    }
+    100% {
+        transform: rotate(0deg);
     }
 }
