@@ -1,6 +1,6 @@
 :root {
-  --color-black: #fafafa; /* #282b3d; - 3f51b5 */
-  --color-white: #282b3d;
+  --color-black: #fff; /* #282b3d; - 3f51b5 */
+  --color-white: #222;
   --color-gray: #999;
   --accent: 10, 58, 234;
   --accent-light: 224, 204, 250;

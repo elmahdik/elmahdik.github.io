@@ -42,9 +42,8 @@ textarea::placeholder {
 
 input,
 textarea {
-  background: rgba(0, 0, 0, 0.05);
+  background: rgba(0, 0, 0, 0.1);
   color: var(--color-white);
-  border-bottom: 1px dotted var(--color-white);
   font-size: 18px;
   padding: 20px;
   outline: none;
@@ -59,19 +58,19 @@ form div {
   gap: 4px;
 }
 form span {
+  color: var(--color-white);
   padding: 4px;
   display: inline-block;
 }
 #input-answer {
-  border: none;
   padding: 16px;
   width: 100px;
-  // text-align: center;
 }
 
 #contact button:hover {
   background-color: var(--color-black);
   color: var(--color-white);
+  border: 1px solid var(--color-white);
 }
 #contact button {
   background-color: var(--color-white);

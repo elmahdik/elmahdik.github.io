@@ -16,15 +16,15 @@ import './style.scss';
 import './style-mobile.scss';
 ---
 <li class="link-card">
-<!-- <li class="link-card" data-aos="fade-down" data-aos-delay={duration}> -->
 	<h2>{label}</h2>
-	<nav>
-		<a href={url ?? URL_GITHUB_PAGES+url_name} target="_blank">visit</a>
-		{!url && <a href={URL_GITHUB+url_name} target="_blank">github</a>}
-	</nav>
 	<img src=`/portfolio/${URL_IMG}` />
+<!-- <li class="link-card" data-aos="fade-down" data-aos-delay={duration}> -->
 	<p>{description}</p>
 	<!-- <ul>
 		{skills.map(s=><li>{s}</li>)}
 	</ul> -->
+	<nav>
+		<a href={url ?? URL_GITHUB_PAGES+url_name} target="_blank" class="a-visit">visit</a>
+		{!url && <a href={URL_GITHUB+url_name} target="_blank" class="a-github">github</a>}
+	</nav>
 </li>

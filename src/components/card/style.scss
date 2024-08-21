@@ -1,12 +1,15 @@
+.link-card:hover {
+  border: 1px solid var(--color-gray);
+}
 .link-card {
   // background-color: var(--color-white);
   border: 1px solid var(--color-white);
-  width: calc(25% - 8%);
-  margin: 4%;
-  padding: 10px;
+  width: calc(20% - 20px);
+  margin: 10px;
+  padding: 40px;
   position: relative;
   display: flex;
-  // justify-content: space-between;
+  justify-content: space-between;
   flex-direction: column;
   // transition: 0.3s;
 }
@@ -28,22 +31,22 @@
 .link-card h2 {
   color: var(--color-white);
   // border-bottom: 2px dashed var(--color-black);
-  font-size: 22px;
-  padding: 10px;
+  font-size: 18px;
+  padding: 30px 10px;
   text-align: right;
   font-weight: bold;
 }
 .link-card p {
-  color: var(--color-white);
+  color: var(--color-gray);
   font-size: 14px;
   padding: 10px;
+  flex:1;
 }
 
 .link-card img {
-  border: 1px solid var(--color-white);
+  // border: 1px solid var(--color-white);
   max-width: 100%;
-  max-height: 200px;
-  margin: 10px 0px;
+  // max-height: 200px;
   width: fit-content;
   object-fit: contain;
   justify-self: flex-start;
@@ -53,7 +56,6 @@
 .link-card nav {
   display: flex;
   justify-content: flex-end;
-  gap: 8px;
 }
 
 .link-card nav a:hover {
@@ -62,12 +64,21 @@
 }
 .link-card nav a {
   background-color: var(--color-white);
-  border: 1px solid var(--color-white);
+  // border: 1px solid var(--color-white);
   color: var(--color-black);
   flex: 1;
   font-size: 12px;
   padding: 10px;
+  margin: 5px;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+}
+.a-visit {
+  background-color: #2e7d32 !important;
+  color: #fff !important;
+}
+.a-github {
+  background-color: #6a1b9a !important;
+  color: #fff !important;
 }
