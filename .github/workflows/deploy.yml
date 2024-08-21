@@ -21,6 +21,7 @@ jobs:
       PUBLIC_EMAIL_JS: ${{ secrets.PUBLIC_EMAIL_JS }}
       PUBLIC_SERVICE_ID: ${{ secrets.PUBLIC_SERVICE_ID }}
       PUBLIC_TEMPLATE_ID: ${{ secrets.PUBLIC_TEMPLATE_ID }}
+
     steps:
       - name: Checkout your repository using git
         uses: actions/checkout@v4
