@@ -1,9 +1,12 @@
 @media (width <= 1260px) {
-  .div--about {
-    width: 80%;
-
-    p {
-      font-size: 16px;
+  #about {
+    flex-direction: column;
+    
+    .div--about {
+  
+      p {
+        font-size: 16px;
+      }
     }
   }
 }

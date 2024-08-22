@@ -7,5 +7,6 @@
         "resume":"/cv/resume-KORFED.pdf",
         "githubPage":"https://elmahdik.github.io/",
         "githubSource":"https://github.com/ElmahdiK/"
-    }
+    },
+    "skills":["html5","css3","javascript", "typescript","sass","astro","react", "angular","jquery","nodejs","expressjs","php","python","mysql","mongodb","github","visualstudio","linux"]
 }
