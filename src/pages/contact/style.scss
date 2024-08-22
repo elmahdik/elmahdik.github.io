@@ -16,7 +16,7 @@
       gap: 4px;
 
       span {
-        color: var(--color-white);
+        color: var(--color-black);
         padding: 4px;
         display: inline-block;
       }
@@ -27,9 +27,9 @@
       }
      
       button {
-        background-color: var(--color-white);
-        color: var(--color-black);
-        border: 1px solid var(--color-black);
+        background-color: var(--color-black);
+        color: var(--color-white);
+        border: 1px solid var(--color-white);
         padding: 16px 40px;
         border-radius: 2px;
         font-size: 16px;
@@ -37,9 +37,9 @@
         cursor: pointer;
 
         &:hover {
-          background-color: var(--color-black);
-          color: var(--color-white);
-          border: 1px solid var(--color-white);
+          background-color: var(--color-white);
+          color: var(--color-black);
+          border: 1px solid var(--color-black);
         }
       }
     }
@@ -51,7 +51,7 @@
 
     input, textarea {
       background: rgba(0, 0, 0, 0.1);
-      color: var(--color-white);
+      color: var(--color-black);
       font-size: 18px;
       padding: 20px;
       outline: none;

@@ -17,7 +17,7 @@
 
     .fadeIn {
         span {
-            color: var(--color-white);
+            color: var(--color-black);
             opacity: 0;
             transform: translateY(30px);
             animation: fadeIn 0.2s ease-out forwards;

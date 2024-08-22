@@ -2,8 +2,8 @@
   width: 30%;
 
   span {
-    color: var(--color-white);
-    border-bottom: 1px solid var(--color-white);
+    color: var(--color-black);
+    border-bottom: 1px solid var(--color-black);
     font-size: 28px;
     width: 100%;
     display: inline-block;
@@ -11,24 +11,24 @@
   }
 
   p {
-    color: var(--color-white);
+    color: var(--color-black);
     font-size: 18px;
     margin: 20px 0px;
   }
 
   a {
-    background-color: var(--color-white);
-    color: var(--color-black);
-    border: 1px solid var(--color-black);
+    background-color: var(--color-black);
+    color: var(--color-white);
+    border: 1px solid var(--color-white);
     padding: 10px;
     text-transform: uppercase;
     text-decoration: none;
     float: right;
 
     &:hover {
-      background-color: var(--color-black);
-      color: var(--color-white);
-      border: 1px solid var(--color-white);
+      background-color: var(--color-white);
+      color: var(--color-black);
+      border: 1px solid var(--color-black);
     }
   }
 }
