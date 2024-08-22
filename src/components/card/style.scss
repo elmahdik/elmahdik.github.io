@@ -1,8 +1,4 @@
-.link-card:hover {
-  border: 1px solid var(--color-gray);
-}
-.link-card {
-  // background-color: var(--color-white);
+.li--card {
   border: 1px solid var(--color-white);
   width: calc(20% - 20px);
   margin: 10px;
@@ -11,74 +7,61 @@
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  // transition: 0.3s;
-}
-// .link-card ul {
-//   display: flex;
-//   list-style: none;
-//   justify-content: center;
-//   gap: 10px;
-//   margin-bottom: 20px;
-//   flex-wrap: wrap;
-// }
-// .link-card ul li {
-//   border: 1px dashed var(--color-black);
-//   color: var(--color-gray);
-//   font-size: 12px;
-//   padding: 4px;
-//   text-transform: lowercase;
-// }
-.link-card h2 {
-  color: var(--color-white);
-  // border-bottom: 2px dashed var(--color-black);
-  font-size: 18px;
-  padding: 30px 10px;
-  text-align: right;
-  font-weight: bold;
-}
-.link-card p {
-  color: var(--color-gray);
-  font-size: 14px;
-  padding: 10px;
-  flex:1;
-}
 
-.link-card img {
-  // border: 1px solid var(--color-white);
-  max-width: 100%;
-  // max-height: 200px;
-  width: fit-content;
-  object-fit: contain;
-  justify-self: flex-start;
-  align-self: center;
-  vertical-align: top;
-}
-.link-card nav {
-  display: flex;
-  justify-content: flex-end;
-}
+  &:hover {
+    border: 1px solid var(--color-gray);
+  }
 
-.link-card nav a:hover {
-  background-color: var(--color-black);
-  color: var(--color-white);
-}
-.link-card nav a {
-  background-color: var(--color-white);
-  // border: 1px solid var(--color-white);
-  color: var(--color-black);
-  flex: 1;
-  font-size: 12px;
-  padding: 10px;
-  margin: 5px;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-.a-visit {
-  background-color: #2e7d32 !important;
-  color: #fff !important;
-}
-.a-github {
-  background-color: #6a1b9a !important;
-  color: #fff !important;
+  h2 {
+    color: var(--color-white);
+    font-size: 18px;
+    padding: 30px 10px;
+    text-align: right;
+    font-weight: bold;
+  }
+
+  p {
+    color: var(--color-gray);
+    font-size: 14px;
+    padding: 10px;
+    flex:1;
+  }
+
+  img {
+    max-width: 100%;
+    width: fit-content;
+    object-fit: contain;
+    justify-self: flex-start;
+    align-self: center;
+    vertical-align: top;
+  }
+
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    gap:2px;
+
+    .a-visit {
+      &:hover{
+        background-color: #2e7d32;
+      }
+    }
+    
+    .a-github {
+      &:hover{
+        background-color: #6a1b9a;
+      }
+    }
+
+    a {
+      background-color: var(--color-white);
+      color: var(--color-black);
+      flex: 1;
+      font-size: 12px;
+      padding: 10px;
+      text-align: center;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+  }
 }

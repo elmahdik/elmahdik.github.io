@@ -2,10 +2,11 @@
 import Card from '../../components/card/index.astro';
 import projects from '../../data/projects.json';
 import './style.scss';
+import './style-mobile.scss';
 ---
 
 <main id="portfolio">
-	<ul role="list" class="link-card-grid">
+	<ul class="ul--cardgrid" role="list">
 		{projects.map((project) => 
 			<Card
 				url={project.url}
