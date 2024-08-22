@@ -1,33 +1,30 @@
-#div--menu {
+.nav--bar {
+  border: 1px solid var(--color-white);
   position: fixed;
-  bottom: 90px;
+  bottom: 50px;
   left: 0px;
   right: 0px;
   z-index: 200;
   margin: 0 auto;
   width: fit-content;
+  display: flex;
+  justify-content: center;
   
-  .nav--bar {
-    border: 1px solid var(--color-white);
-    display: flex;
-    justify-content: center;
-    
-    a {
-      background-color: var(--color-black);
-      color: var(--color-white);
-      font-size: 16px;
-      padding: 20px;
-      text-decoration: none;
-      display: inline-block;
-      font-weight: bold;
-      text-transform: capitalize;
-      text-align: center;
-      cursor: pointer;
+  a {
+    background-color: var(--color-black);
+    color: var(--color-white);
+    font-size: 16px;
+    padding: 20px;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-align: center;
+    cursor: pointer;
 
-      &:hover {
-        background-color: var(--color-white);
-        color: var(--color-black);
-      }
+    &:hover {
+      background-color: var(--color-white);
+      color: var(--color-black);
     }
   }
 }

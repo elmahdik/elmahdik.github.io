@@ -1,15 +1,12 @@
 @media (width <= 1260px) {
-    #div--menu {
+    .nav--bar {
+        border:none;
+        border-top: 1px solid var(--color-white);
         bottom: 0px;
         width: 100%;
 
-        .nav--bar {
-            border:none;
-            border-top: 1px solid var(--color-white);
-
-            a {
-                flex: 1;
-            }
+        a {
+            flex: 1;
         }
     }
 }
