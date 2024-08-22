@@ -1,28 +1,24 @@
 ---
+import { Image } from 'astro:assets';
+import './style.scss';
+import './style-mobile.scss';
+
 interface Props {
 	url: string | undefined;
 	label: string;
 	description: string;
-	skills: string [];
-	duration: number;
 }
-const { url, label, description, skills, duration } = Astro.props;
-const url_name=label.split(' ').join('');
+const { url, label, description } = Astro.props;
 const URL_GITHUB_PAGES=`https://elmahdik.github.io/`;
 const URL_GITHUB=`https://github.com/ElmahdiK/`;
-const URL_IMG = (url_name==='kaldp' || url_name==='solidjs-retrogamep') ? url_name+'.gif' : url_name+'.webp';
-
-import './style.scss';
-import './style-mobile.scss';
+const url_name=label.split(' ').join('');
+const URL_IMG = url_name+'.webp';
 ---
+
 <li class="link-card">
 	<h2>{label}</h2>
-	<img src=`/portfolio/${URL_IMG}` />
-<!-- <li class="link-card" data-aos="fade-down" data-aos-delay={duration}> -->
+	<Image src={`/portfolio/${URL_IMG}`} alt={label} width="100" height="100"  style="width: 100%; height: auto;" />
 	<p>{description}</p>
-	<!-- <ul>
-		{skills.map(s=><li>{s}</li>)}
-	</ul> -->
 	<nav>
 		<a href={url ?? URL_GITHUB_PAGES+url_name} target="_blank" class="a-visit">visit</a>
 		{!url && <a href={URL_GITHUB+url_name} target="_blank" class="a-github">github</a>}

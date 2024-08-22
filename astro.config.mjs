@@ -1,13 +1,11 @@
 import { defineConfig } from 'astro/config';
-import netlify from '@astrojs/netlify/functions';
+import netlify from '@astrojs/netlify';
 import react from '@astrojs/react';
-import { nodePolyfills } from "vite-plugin-node-polyfills";
 
-// https://astro.build/config
 export default defineConfig({
     site: 'https://elmahdik.github.io',
-    output: "hybrid", // or 'server'
-    adapter: netlify(), // Active l'adaptateur Netlify
+    output: "hybrid",
+    adapter: netlify(),
     experimental: {
         actions: true,
     },
@@ -15,8 +13,5 @@ export default defineConfig({
         react({
             experimentalReactChildren: true,
         }),
-    ],
-    // plugins: [
-    //     nodePolyfills(),
-    // ],
+    ]
 });
