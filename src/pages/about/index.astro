@@ -1,23 +1,13 @@
 ---
-// import Skills from '../../components/skills/index.astro';
-import Typewriter from '../../components/typewriter/index.astro';
 import './style.scss';
 import './style-mobile.scss';
-
-const about = "Passionate about the web for more than 10 years, I had the opportunity to work in various fields as a web/mobile developer - back and front: private company, public research laboratory, startup as co-founder and for customers. I created this website in order to share with you some of my personal web projects. Do not hesitate to contact me if necessary. Have a great visit!";
+import about from '../../data/about.json';
 ---
+
 <main id="about">
-	<div class="skills">
-		<!-- <Skills /> -->
-	</div>
-	<div class="me">
+	<div class="div-me">
 		<span class="sp-about">About</span>
-		<!-- <Typewriter text={about} data-aos="fade-up" /> -->
-		<Typewriter text={about} />
-		<br />
-		<nav>
-			<a href="/cv/resume-KORFED.pdf" target="_blank">resume</a>
-			<!-- <a href="#portfolio">portfolio</a> -->
-		</nav>
+		<p>{about.bio}</p>
+		<a href={about.resumeLink} target="_blank">resume</a>
 	</div>
 </main>
