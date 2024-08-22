@@ -14,7 +14,7 @@ import { Image } from 'astro:assets';
 	<div class="div--skills">
 		<span>Skills</span>
 		<nav>
-			{about.skills.map(skill => <Image src={`/public/skills/${skill}.png`} width="100" height="100" style="width: 100px; height: auto;" title={skill} alt={skill} />)}
+			{about.skills.map(skill => <Image src={`./public/skills/${skill}.png`} width="100" height="100" style="width: 100px; height: auto;" title={skill} alt={skill} />)}
 		</nav>
 	</div>
 </main>
