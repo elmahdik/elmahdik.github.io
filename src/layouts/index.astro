@@ -1,33 +1,13 @@
 ---
+import '../styles/global.css';
 interface Props {
 	title: string;
 }
 const { title } = Astro.props;
-import '../styles/global.css';
-import { ViewTransitions } from 'astro:transitions';
-
-const anim = {
-  old: {
-    name: 'fadeIn',
-    duration: '0.2s',
-    easing: 'linear',
-    fillMode: 'forwards',
-  },
-  new: {
-    name: 'fadeOut',
-    duration: '0.3s',
-    easing: 'linear',
-    fillMode: 'backwards',
-  }
-};
-
-const myFade = {
-  forwards: anim,
-  backwards: anim,
-};
 ---
+
 <!doctype html>
-<html lang="en" transition:animate="none">
+<html lang="en">
 	<head>
 		 <!-- meta tags: HTML -->
 		 <meta charset="UTF-8">
@@ -50,19 +30,14 @@ const myFade = {
 
 		<link rel="icon" type="image/svg+xml" href="/logo/icon_16.ico" />
 		<meta name="generator" content={Astro.generator} />
-		<ViewTransitions />
 
 		<script type="text/javascript">
-			// Vérifie si l'utilisateur est sur GitHub Pages
 			if (window.location.hostname === "elmahdik.github.io" || window.location.hostname.endsWith(".github.io")) {
-				// Redirige vers Netlify si l'utilisateur est sur GitHub Pages
 				window.location.href = "https://elmahdik.netlify.app";
 			}
 		</script>
 	</head>
 	<body>
-		<!-- <main transition:animate={myFade}> -->
-			<slot />
-		<!-- </main> -->
+		<slot />
 	</body>
 </html>
