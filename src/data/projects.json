@@ -116,15 +116,6 @@
         ]
     },
     {
-        "label": "greeting cards",
-        "description": "Send a beautiful greeting cards now! | 🎄 🎅",
-        "skills": [
-            "javascript",
-            "php"
-        ],
-        "url": "https://yoann-moise.com/projects/greetings/index.php"
-    },
-    {
         "label": "connect 4",
         "description": "Play the famous Connect 4 game now! | 🔴 🟡",
         "skills": [

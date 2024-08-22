@@ -4,23 +4,21 @@ import './style.scss';
 import './style-mobile.scss';
 
 interface Props {
-	url: string | undefined;
+	imgSrc: string;
+	urlVisit: string;
+	urlGithub: string;
 	label: string;
 	description: string;
 }
-const { url, label, description } = Astro.props;
-const URL_GITHUB_PAGES=`https://elmahdik.github.io/`;
-const URL_GITHUB=`https://github.com/ElmahdiK/`;
-const url_name=label.split(' ').join('');
-const URL_IMG = url_name+'.webp';
+const {imgSrc, urlVisit, urlGithub, label, description } = Astro.props;
 ---
 
 <li class="li--card">
 	<h2>{label}</h2>
-	<Image src={`/portfolio/${URL_IMG}`} alt={label} width="800" height="200"  style="width: 100%; height: auto;" />
+	<Image src={imgSrc} alt={label} width="800" height="200"  style="width: 100%; height: auto;" />
 	<p>{description}</p>
 	<nav>
-		<a href={url ?? URL_GITHUB_PAGES+url_name} target="_blank" class="a-visit">visit</a>
-		{!url && <a href={URL_GITHUB+url_name} target="_blank" class="a-github">github</a>}
+		<a href={urlVisit} target="_blank" class="a-visit">visit</a>
+		<a href={urlGithub} target="_blank" class="a-github">github</a>
 	</nav>
 </li>
