@@ -20,20 +20,14 @@
   border-collapse: collapse;
   font-family: "InterR", sans-serif;
 }
-body {
-  background-color: var(--color-black);
-  /* height: 100vh; */
-  /* scroll-snap-type: y mandatory; */
-}
 html {
-  /* font-family: system-ui, sans-serif; */
-  scroll-behavior: smooth;
-  background-size: 224px;
+  /* scroll-behavior: smooth; */
+  body {
+    background-color: var(--color-black);
+    /* scroll-snap-type: y mandatory; */
+  }
 }
-code {
-  /* font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace; */
-}
+
 main {
   margin: auto;
   min-height: 100vh;
