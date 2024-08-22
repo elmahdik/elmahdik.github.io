@@ -1,13 +1,10 @@
 ---
 import './style.scss';
 import './style-mobile.scss';
-
-const firstname="Elmahdi"
-const lastname="Korfed"
-const sentence="Welcome"
-
+import about from '../../data/about.json';
 ---
+
 <main id="home">
-	<a href="/" class="fadeIn">{firstname.split('').map(e=><span>{e}</span>)} {lastname.split('').map(e=><span>{e}</span>)}</a>
-	<p class="fadeIn">{sentence.split('').map(e=><span>{e}</span>)} <span class="span-hand">👋</span></p>
+	<a href="/" class="fadeIn">{about.firstname.split('').map(e=><span>{e}</span>)} {about.lastname.split('').map(e=><span>{e}</span>)}</a>
+	<p class="fadeIn">{about.sentence.split('').map(e=><span>{e}</span>)} <span class="span-hand">👋</span></p>
 </main>
