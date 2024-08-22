@@ -1,9 +1,9 @@
-.div-me {
+.div--about {
   width: 30%;
   flex-direction: column;
   display: flex;
 
-  .sp-about {
+  span {
     color: var(--color-white);
     border-bottom: 1px solid var(--color-white);
     font-size: 28px;
