@@ -1,76 +1,51 @@
 :root {
-  --color-black: #fff; /* #282b3d; - 3f51b5 */
-  --color-white: #222;
+  --color-black: #222;
+  --color-white: #fff;
   --color-gray: #999;
-  --accent: 10, 58, 234;
-  --accent-light: 224, 204, 250;
-  --accent-dark: 49, 10, 101;
-  --accent-gradient: linear-gradient(
-    45deg,
-    rgb(var(--accent)),
-    rgb(var(--accent-light)) 30%,
-    white 60%
-  );
 }
+
 * {
   margin: 0px;
   padding: 0px;
   border: 0px;
   box-sizing: border-box;
   border-collapse: collapse;
-  font-family: "InterR", sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
+
 html {
   /* scroll-behavior: smooth; */
+
+  /* ---- darkMode ---- */
+  &.dark {
+    --color-black: #fff !important;
+    --color-white: #222 !important;
+    --color-gray: #999 !important;
+  }
+
   body {
     background-color: var(--color-black);
     /* scroll-snap-type: y mandatory; */
   }
-}
 
-main {
-  margin: auto;
-  min-height: 100vh;
-  /* width: 50%; */
-  /* max-width: calc(100%); */
-  /* font-size: 20px; */
-  line-height: 1.6;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  position: relative;
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
-}
-main canvas {
-  position: absolute;
-}
-
-section {
-  /* background-color: #eee; */
-  position: relative;
-}
-#section_main {
-  display: flex;
-  flex-direction: column;
-}
-
-@media (width <= 1260px) {
-  main#home,
-  main#contact {
-    width: 100%;
+  section {
+    // position: relative;
   }
-}
+  
+  main {
+    margin: auto;
+    min-height: 100vh;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    // scroll-snap-align: start;
+    // scroll-snap-stop: always;
 
-/* ---- darkMode ---- */
-html.dark {
-  --color-black: #fefefe !important;
-  --color-white: #282b3d !important;
-}
-
-/* ---- darkMode ---- */
-@font-face {
-  font-family: "InterR";
-  src: url("../../public/fonts/Inter-Regular.ttf") format("truetype");
+    canvas {
+      position: absolute;
+    }
+  }
 }
