@@ -1,97 +1,64 @@
-main#contact {
-  /* background-color: var(--color-black); */
+#contact {
   display: flex;
   flex-direction: column;
   position: relative;
-}
-#contact nav {
-  display: flex;
-  align-self: center;
-  justify-content: space-between;
-  align-items: stretch;
-  gap: 20px;
-}
-#contact nav a:hover {
-  background-color: var(--color-white);
-  color: var(--color-black);
-}
-#contact nav a {
-  background-color: var(--color-black);
-  color: var(--color-white);
-  border: 1px solid var(--color-white);
-  padding: 10px;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-#contact img {
-  width: 50%;
-  flex: 1;
-}
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  width: calc(60% - 200px);
-  z-index: 1;
-  padding: 10px;
-}
-input::placeholder,
-textarea::placeholder {
-  color: #888;
-}
 
-input,
-textarea {
-  background: rgba(0, 0, 0, 0.1);
-  color: var(--color-white);
-  font-size: 18px;
-  padding: 20px;
-  outline: none;
-}
-textarea {
-  min-height: 100px;
-  resize: vertical;
-}
-form div {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 4px;
-}
-form span {
-  color: var(--color-white);
-  padding: 4px;
-  display: inline-block;
-}
-#input-answer {
-  padding: 16px;
-  width: 100px;
-}
-
-#contact button:hover {
-  background-color: var(--color-black);
-  color: var(--color-white);
-  border: 1px solid var(--color-white);
-}
-#contact button {
-  background-color: var(--color-white);
-  color: var(--color-black);
-  border: 1px solid var(--color-black);
-  padding: 16px 40px;
-  border-radius: 2px;
-  font-size: 16px;
-  text-transform: uppercase;
-  cursor: pointer;
-}
-
-.p-title {
-  color: var(--color-white);
-  font-size: 120px;
-}
-
-@media (width <= 1260px) {
   form {
-    width: calc(100% - 40px);
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: calc(60% - 200px);
+
+    div {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 4px;
+
+      span {
+        color: var(--color-white);
+        padding: 4px;
+        display: inline-block;
+      }
+      
+      #input-answer {
+        padding: 16px;
+        width: 100px;
+      }
+     
+      button {
+        background-color: var(--color-white);
+        color: var(--color-black);
+        border: 1px solid var(--color-black);
+        padding: 16px 40px;
+        border-radius: 2px;
+        font-size: 16px;
+        text-transform: uppercase;
+        cursor: pointer;
+
+        &:hover {
+          background-color: var(--color-black);
+          color: var(--color-white);
+          border: 1px solid var(--color-white);
+        }
+      }
+    }
+
+    textarea {
+      min-height: 100px;
+      resize: vertical;
+    }
+
+    input, textarea {
+      background: rgba(0, 0, 0, 0.1);
+      color: var(--color-white);
+      font-size: 18px;
+      padding: 20px;
+      outline: none;
+
+      &::placeholder {
+        color: var(--color-gray);
+      }
+    }
   }
 }
