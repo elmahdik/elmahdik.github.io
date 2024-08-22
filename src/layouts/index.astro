@@ -5,10 +5,8 @@ interface Props {
 const { title } = Astro.props;
 import '../styles/global.css';
 import { ViewTransitions } from 'astro:transitions';
+import '@fortawesome/fontawesome-svg-core/styles.css';
 
-import '@fortawesome/fontawesome-svg-core/styles.css'
-
-// import 'aos/dist/aos.css'; 
 const anim = {
   old: {
     name: 'fadeIn',
@@ -94,9 +92,4 @@ const myFade = {
 
 	// replace the unprocessed icons with the svg and watch for additional icons
 	dom.watch();
-</script>
-
-<script> 
-   /* import AOS from "aos"; 
-    AOS.init(); */
 </script>

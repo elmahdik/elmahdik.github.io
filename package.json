@@ -17,14 +17,12 @@
     "@emailjs/nodejs": "^4.0.4",
     "@fortawesome/fontawesome-svg-core": "^6.6.0",
     "@fortawesome/free-solid-svg-icons": "^6.6.0",
-    "aos": "^2.3.4",
     "astro": "^4.13.1",
     "canvas-confetti": "^1.9.3",
     "sass": "^1.77.8",
     "typescript": "^5.3.3"
   },
   "devDependencies": {
-    "@types/aos": "^3.0.7",
     "@types/canvas-confetti": "^1.6.4",
     "@types/node": "^22.2.0"
   }
