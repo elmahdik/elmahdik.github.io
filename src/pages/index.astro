@@ -1,18 +1,18 @@
 ---
 import Layout from '../layouts/index.astro';
-
 import Home from './home/index.astro';
 import About from './about/index.astro';
 import Portfolio from './portfolio/index.astro';
 import Contact from './contact/index.astro';
 import Nav from '../components/nav/index.astro';
 ---
+
 <Layout title="EK • Welcome!">
     <Home />
+    <Nav />
     <section>
         <About />
         <Portfolio />
         <Contact />
     </section>
-    <Nav />
 </Layout>
