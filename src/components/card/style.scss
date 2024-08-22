@@ -2,7 +2,7 @@
   border: 1px solid var(--color-gray);
   width: calc(20% - 20px);
   margin: 10px;
-  padding: 40px;
+  padding: 20px;
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -11,18 +11,23 @@
   h2 {
     color: var(--color-black);
     font-size: 18px;
-    padding: 30px 10px;
+    padding-bottom: 20px;
     text-align: right;
   }
 
   p {
     color: var(--color-gray);
     font-size: 14px;
-    padding: 10px;
+    padding: 40px 0px;
     flex:1;
   }
 
   img {
+    background-color: var(--color-white);
+    box-shadow: inset 0px 2px 4px var(--color-gray);
+    border: 1px solid var(--color-gray);
+    border-radius: 3px;
+    padding: 10px;
     max-width: 100%;
     width: fit-content;
     object-fit: contain;
