@@ -13,7 +13,6 @@ const menuItems=['home','about','portfolio','contact'];
 
 <script>
     const setActiveLink = (name : string) => {
-        console.log(name);
         document.querySelectorAll('#nav--bar a').forEach(a=>{
             if (a.id===`a-${name}`) a.classList.add('active');
             else a.classList.remove('active');
