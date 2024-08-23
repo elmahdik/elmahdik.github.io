@@ -11,27 +11,26 @@
 
     span {
       color: var(--color-black);
-      border-bottom: 1px solid var(--color-gray);
+      border-bottom: 1px solid var(--color-lightgray);
       font-size: 28px;
       width: 100%;
       margin-bottom: 10px;
       display: inline-block;
-      text-align: left;
+      text-align: center;
     }
 
     nav {
       display: flex;
       flex-wrap: wrap;
-      gap: 8px;
+      gap: 10px;
 
       img {
-        background-color: var(--color-lightgray);
         padding: 10px;
         cursor: pointer;
-        border-radius: 8px;
+        border-radius: 6px;
 
         &:hover{
-          background-color: var(--color-gray);
+          background-color: var(--color-lightgray);
         }
       }
     }
@@ -39,21 +38,30 @@
   .div--about {
     flex:1;
     padding: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-content: center;
   
-    span {
-      color: var(--color-black);
-      border-bottom: 1px solid var(--color-gray);
-      font-size: 28px;
-      width: 100%;
-      display: inline-block;
-      text-align: right;
+    img {
+      align-self: center;
     }
   
     p {
+      background-color:rgba(0,0,0,.05);
       color: var(--color-black);
-      font-size: 18px;
-      margin: 20px 0px;
+      font-size: 16px;
+      margin-top: 40px;
+      margin-bottom: 10px;
+      padding: 40px;
+      border-bottom-right-radius: 20px;
+      border-bottom-left-radius: 20px;
+
+      span {
+        font-size: 16px;
+        margin-bottom: 20px;
+        display: block;
+      }
     }
   
     a {
@@ -64,7 +72,8 @@
       padding: 10px 20px;
       text-transform: uppercase;
       text-decoration: none;
-      float: right;
+      // float: right;
+      align-self: flex-end;
   
       &:hover {
         background-color: var(--color-white);

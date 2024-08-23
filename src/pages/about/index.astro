@@ -9,15 +9,16 @@ let imgSrc='';
 <main id="about">
 	<div class="div--about">
 		<!-- <span>About</span> -->
-		<p>{about.bio}</p>
+		 <Image src={'/dev.gif'} alt="dev" title="dev" width="100" height="100" style="width: 60%; height: auto" />
+		<p>{about.bio.split('.').map(sentence => <span>{sentence}.</span>)}</p>
 		<a href={about.url.resume} target="_blank">resume</a>
 	</div>
 	<div class="div--skills">
-		<span>Skills</span>
+		<span>&#60; Skills /&#62;</span>
 		<nav>
 			{about.skills.map(skill => {
 				imgSrc=`/skills/${skill}.png`;
-				return <Image src={imgSrc} width="100" height="100" style="width: 100px; height: auto;" title={skill} alt={skill} />;
+				return <Image src={imgSrc} width="100" height="100" style="width: calc(20% - 10px); height: auto;" title={skill} alt={skill} />;
 			})
 			}
 		</nav>
