@@ -8,3 +8,8 @@ import about from '../../data/about.json';
 	<a href="/" class="fadeIn">{about.firstname.split('').map(e=><span>{e}</span>)} {about.lastname.split('').map(e=><span>{e}</span>)}</a>
 	<p class="fadeIn">{about.sentence.split('').map(e=><span>{e}</span>)} <span class="span-hand">👋</span></p>
 </main>
+
+<script>
+	import confetti from "canvas-confetti";
+	confetti();
+</script>
