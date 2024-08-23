@@ -21,9 +21,13 @@
     text-align: center;
     cursor: pointer;
 
-    &:hover {
+    &.active {
       background-color: var(--color-black);
-      color: var(--color-white);
+      color: var(--color-white) !important;
+    }
+
+    &:hover {
+      color: var(--color-gray);
     }
   }
 }

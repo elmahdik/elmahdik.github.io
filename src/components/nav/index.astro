@@ -2,12 +2,37 @@
 import './style.scss';
 import './style-mobile.scss';
 import ThemeIcon from '../themeIcon/index.astro';
+
+const menuItems=['home','about','portfolio','contact'];
 ---
 
-<nav class="nav--bar">
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#portfolio">Portfolio</a>
-    <a href="#contact">Contact</a>
+<nav id="nav--bar" class="nav--bar">
+    {menuItems.map(item => <a href={`#`+item} id={`a-`+item}>{item}</a>)}
     <ThemeIcon />
 </nav>
+
+<script>
+    const setActiveLink = (name : string) => {
+        console.log(name);
+        document.querySelectorAll('#nav--bar a').forEach(a=>{
+            if (a.id===`a-${name}`) a.classList.add('active');
+            else a.classList.remove('active');
+        })
+    }
+
+    document.querySelectorAll('#nav--bar a[id^="a-"]').forEach(a => {
+        a.addEventListener('click',(e)=> {
+            setActiveLink((e.target as HTMLLinkElement).textContent!);
+        })
+    });
+
+    document.querySelectorAll('main').forEach(main => {
+        main.addEventListener('mouseenter',(e)=> {
+            setActiveLink((e.target as HTMLElement).id);
+        })
+    });
+
+    // window.addEventListener("hashchange", () => {
+    //     setActiveLink(window.location.hash.substring(1));
+    // }, false);
+</script>
