@@ -9,15 +9,17 @@ let url_name="";
 
 <main id="portfolio">
 	<ul class="ul--cardgrid" role="list">
-		{projects.map((project) => {
+		{projects.map((project, index) => {
 			url_name=project.label.split(' ').join('');
 
 			return <Card
+				index={index}
 				imgSrc={`/portfolio/${url_name}.webp`}
 				urlVisit={about.url.githubPage+url_name}
 				urlGithub={about.url.githubSource+url_name }
 				label={project.label}
 				description={project.description}
+				skills={project.skills}
 			/>
 		}
 		)}

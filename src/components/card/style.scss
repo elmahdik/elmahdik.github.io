@@ -1,67 +1,173 @@
 .li--card {
-  border: 1px solid var(--color-gray);
-  width: calc(20% - 20px);
-  margin: 10px;
+  background: linear-gradient(120deg,rgba(128, 0, 128, 0.4),rgba(30, 143, 255, 0.4));
+  width: calc(100% - 20%);
+  margin: 10px 10%;
   padding: 20px;
   position: relative;
   display: flex;
   justify-content: space-between;
-  flex-direction: column;
+  flex-direction: row;
 
-  h2 {
-    color: var(--color-black);
-    font-size: 18px;
-    padding-bottom: 20px;
-    text-align: right;
-  }
 
-  p {
-    color: var(--color-gray);
-    font-size: 14px;
-    padding: 40px 0px;
-    flex:1;
-  }
+  /*&:hover {
+    img {
+      animation-name: zoomImg !important;
+      animation-iteration-count: 1 !important;
+      animation-duration: 5s !important;
+      animation-fill-mode: forwards;
+    }
+    h2 {
+      animation-name: zoomText !important;
+      animation-iteration-count: 1 !important;
+      animation-duration: 5s !important;
+      animation-fill-mode: forwards;
+    }
+  }*/
 
-  img {
-    background-color: var(--color-white);
-    box-shadow: inset 0px 2px 4px var(--color-gray);
-    border: 1px solid var(--color-gray);
-    border-radius: 3px;
-    padding: 10px;
-    max-width: 100%;
-    width: fit-content;
-    object-fit: contain;
-    justify-self: flex-start;
-    align-self: center;
-    vertical-align: top;
-  }
-
-  nav {
+  .div-img {
+    // background-color: rgba(0,0,0,0.02);
+    flex:1.5;
+    // padding: 20px;
+    // width: 80%;
     display: flex;
-    justify-content: flex-end;
-    gap:2px;
+    justify-content: center;
+    align-content: center;
+    position: relative;
 
-    .a-visit {
-      &:hover{
-        background-color: #2e7d32;
-      }
+    img {
+      background-color: rgba(255,255,255,0.4);
+      border:1px solid var(--color-white);
+      box-shadow: 10px 10px 0px 0px #111;
+      // max-width: 100%;
+      width: fit-content;
+      // width: 50%;
+      // flex:1;
+      object-fit: contain;
+      justify-self: flex-start;
+      align-self: center;
+      vertical-align: top;
+      margin:40px;
+      padding: 20px;
+      transform:scale(1);
+      transition: transform 0.5s ease; 
     }
-    
-    .a-github {
-      &:hover{
-        background-color: #6a1b9a;
-      }
-    }
+  }
 
-    a {
-      background-color: var(--color-black);
-      color: var(--color-white);
-      flex: 1;
-      font-size: 12px;
+  .div-infos {
+    background-color: rgba(255,255,255,0.4);
+    border:1px solid var(--color-white);
+    flex:0.5;
+    // background-color: var(--color-white);
+    margin:20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    ul {
+      // background-color: var(--color-white);
+      // border-bottom:1px solid var(--color-black);
+      // position: absolute;
+      // bottom: 0px;
+      // left: 0%;
+      // right: 0%;
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
       padding: 10px;
-      text-align: center;
-      text-decoration: none;
-      text-transform: uppercase;
+
+      li{
+
+        span {
+          color: var(--color-black);
+          padding:6px;
+          font-size: 10px;
+          text-transform: uppercase;
+        }
+      }
+    }
+
+    .div-infos-content{
+      width: calc(60% - 0px);
+      display: flex;
+      flex-direction: column;
+      gap:20px;
+      flex:1;
+      justify-content: center;
+
+      h2 {
+        color: var(--color-black);
+        font-size: 28px;
+        margin-bottom: 10px;
+        font-weight: bold;
+        text-align: center;
+        letter-spacing:normal;
+        text-transform: uppercase;
+        transition: letter-spacing 0.5s ease; 
+      }
+
+      p {
+        color: var(--color-black);
+        font-size: 16px;
+      }
+
+      nav {
+        display: flex;
+        gap:2px;
+
+        .a-visit {
+          &:hover{
+            background-color: #2e7d32;
+          }
+        }
+        
+        .a-github {
+          &:hover{
+            background-color: #6a1b9a;
+          }
+        }
+
+        a {
+          background-color: var(--color-black);
+          color: var(--color-white);
+          flex: 1;
+          font-size: 12px;
+          padding: 10px;
+          text-align: center;
+          text-decoration: none;
+          text-transform: uppercase;
+        }
+      }
     }
   }
 }
+
+/*
+@keyframes zoomText {
+  0% {
+      // opacity: 1;
+      // transform: rotate(0deg);
+      letter-spacing:normal;
+  }
+  100% {
+      // opacity: 1;
+      // transform: rotate(0deg);
+      letter-spacing:2px;
+  }
+}
+
+@keyframes zoomImg {
+  0% {
+      // opacity: 1;
+      // transform: rotate(0deg);
+      transform:scale(1);
+  }
+  100% {
+      // opacity: 1;
+      // transform: rotate(0deg);
+      transform:scale(1.05);
+  }
+}*/
