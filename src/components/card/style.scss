@@ -1,64 +1,40 @@
 .li--card {
-  background: linear-gradient(120deg,rgba(128, 0, 128, 0.4),rgba(30, 143, 255, 0.4));
-  width: calc(100% - 20%);
-  margin: 10px 10%;
-  padding: 20px;
-  position: relative;
+  width: calc(100% - 0px);
+  height: calc(50vh - 0px);
+  // margin-bottom: 1px;
   display: flex;
-  justify-content: space-between;
-  flex-direction: row;
 
+  // &:hover {
 
-  /*&:hover {
-    img {
-      animation-name: zoomImg !important;
-      animation-iteration-count: 1 !important;
-      animation-duration: 5s !important;
-      animation-fill-mode: forwards;
-    }
-    h2 {
-      animation-name: zoomText !important;
-      animation-iteration-count: 1 !important;
-      animation-duration: 5s !important;
-      animation-fill-mode: forwards;
-    }
-  }*/
+  //   .div-infos {
+  //       animation-name: fade-text;
+  //       animation-iteration-count: 1;
+  //       animation-duration: 2s;
+  //       animation-fill-mode: forwards ;
+  //   }
+  // }
 
   .div-img {
-    // background-color: rgba(0,0,0,0.02);
-    flex:1.5;
-    // padding: 20px;
-    // width: 80%;
+    background: linear-gradient(120deg,rgba(128, 0, 128, 0.4),rgba(30, 143, 255, 0.4));
+    width: 70%;
     display: flex;
     justify-content: center;
     align-content: center;
-    position: relative;
 
     img {
       background-color: rgba(255,255,255,0.4);
       border:1px solid var(--color-white);
       box-shadow: 10px 10px 0px 0px #111;
-      // max-width: 100%;
-      width: fit-content;
-      // width: 50%;
-      // flex:1;
+      max-height: (40vh);
+      max-width: 90%;
+      padding: 2vh;
       object-fit: contain;
-      justify-self: flex-start;
       align-self: center;
-      vertical-align: top;
-      margin:40px;
-      padding: 20px;
-      transform:scale(1);
-      transition: transform 0.5s ease; 
     }
   }
 
   .div-infos {
-    background-color: rgba(255,255,255,0.4);
-    border:1px solid var(--color-white);
-    flex:0.5;
-    // background-color: var(--color-white);
-    margin:20px;
+    width:30%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -66,12 +42,6 @@
     position: relative;
 
     ul {
-      // background-color: var(--color-white);
-      // border-bottom:1px solid var(--color-black);
-      // position: absolute;
-      // bottom: 0px;
-      // left: 0%;
-      // right: 0%;
       list-style: none;
       display: flex;
       flex-direction: row;
@@ -145,7 +115,16 @@
   }
 }
 
+
 /*
+@keyframes fade-text {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
 @keyframes zoomText {
   0% {
       // opacity: 1;
