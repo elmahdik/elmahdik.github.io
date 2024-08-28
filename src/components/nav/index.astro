@@ -12,6 +12,8 @@ const menuItems=['home','about','portfolio','contact'];
 </nav>
 
 <script>
+    let navBar = document.querySelector('#nav--bar');
+
     const setActiveLink = (name : string) => {
         document.querySelectorAll('#nav--bar a').forEach(a=>{
             if (a.id===`a-${name}`) a.classList.add('active');
@@ -34,4 +36,18 @@ const menuItems=['home','about','portfolio','contact'];
     // window.addEventListener("hashchange", () => {
     //     setActiveLink(window.location.hash.substring(1));
     // }, false);
+
+    window.onscroll = function() {myFunction()};
+
+    function myFunction() {
+        if ((document.querySelector('#home') as HTMLElement)?.getBoundingClientRect().bottom <= 0){
+            if (navBar?.classList.contains('hidden')) {
+                navBar?.classList.remove('hidden');
+            }
+        }else {
+            if (!navBar?.classList.contains('hidden')) {
+                navBar?.classList.add('hidden');
+            }
+        }
+    }
 </script>
