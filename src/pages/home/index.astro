@@ -5,6 +5,7 @@ import about from '../../data/about.json';
 ---
 
 <main id="home">
+	<ul>{[...about.skills,...about.skills, ...about.skills, ...about.skills, ...about.skills].map(skill=><li><span>{skill}</span></li>)}</ul>
 	<a href="/" class="fadeIn">{about.firstname.split('').map(e=><span>{e}</span>)} {about.lastname.split('').map(e=><span>{e}</span>)}</a>
 	<p class="fadeIn">{about.sentence.split('').map(e=><span>{e}</span>)} <span class="span-hand">👋</span></p>
 </main>
