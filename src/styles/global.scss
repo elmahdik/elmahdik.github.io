@@ -2,6 +2,7 @@
   --color-black: #222;
   --color-white: #fff;
   --color-gray: #999;
+  --color-grey: #aaa;
   --color-lightgray: #ddd;
 }
 
@@ -21,6 +22,7 @@ html {
   &.dark {
     --color-black: #fff !important;
     --color-white: #222 !important;
+    --color-grey: #000 !important;
   }
 
   body {
@@ -29,7 +31,7 @@ html {
   }
 
   section {
-    // position: relative;
+    position: relative;
   }
   
   main {
