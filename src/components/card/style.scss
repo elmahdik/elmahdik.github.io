@@ -103,12 +103,19 @@
         a {
           background-color: var(--color-black);
           color: var(--color-white);
+          border: 1px solid var(--color-white);
+          outline: 2px solid var(--color-black);
           flex: 1;
-          font-size: 12px;
-          padding: 10px;
+          font-size: 16px;
+          padding: 6px 8px;
+          margin:4px;
+          gap: 10px;
           text-align: center;
           text-decoration: none;
-          text-transform: uppercase;
+          text-transform: capitalize;
+          display: flex;
+          justify-content: center;
+          align-items: center;
         }
       }
     }

@@ -3,6 +3,7 @@
   align-items: stretch;
 
   .div--skills {
+    background-color: var(--color-black);
     flex:1;
     padding: 10%;
     justify-content: center;
@@ -43,19 +44,9 @@
     justify-content: center;
     align-content: center;
   
-    img {
-      align-self: center;
-    }
-  
     p {
-      background-color:rgba(0,0,0,.05);
       color: var(--color-black);
       font-size: 16px;
-      margin-top: 40px;
-      margin-bottom: 10px;
-      padding: 40px;
-      border-bottom-right-radius: 20px;
-      border-bottom-left-radius: 20px;
 
       span {
         font-size: 16px;
@@ -64,21 +55,32 @@
       }
     }
   
-    a {
-      background-color: var(--color-black);
-      color: var(--color-white);
-      border: 1px solid var(--color-white);
-      font-size: 16px;
-      padding: 10px 20px;
-      text-transform: uppercase;
-      text-decoration: none;
-      // float: right;
-      align-self: flex-end;
-  
-      &:hover {
-        background-color: var(--color-white);
-        color: var(--color-black);
-        border: 1px solid var(--color-black);
+    nav {
+      display: flex;
+      justify-content: center;
+      gap:4px;
+      
+      a {
+        background-color: var(--color-black);
+        color: var(--color-white);
+        border: 1px solid var(--color-white);
+        outline: 2px solid var(--color-black);
+        font-size: 16px;
+        padding: 6px 8px;
+        margin:4px;
+        gap: 10px;
+        text-decoration: none;
+        align-self: flex-end;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        &:hover {
+          background-color: var(--color-white);
+          color: var(--color-black);
+          border: 1px solid var(--color-black);
+          outline: 2px solid var(--color-white);
+        }
       }
     }
   }

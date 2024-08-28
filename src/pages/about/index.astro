@@ -1,24 +1,36 @@
 ---
 import './style.scss';
 import './style-mobile.scss';
+import SvgLink from '../../components/svgLink/index.astro';
 import about from '../../data/about.json';
 import { Image } from 'astro:assets';
 let imgSrc='';
+
+const links = [{
+	"label":"LinkedIn",
+	"href":about.url.linkedin
+},{
+	"label":"Github",
+	"href":about.url.githubSource
+},{
+	"label":"Resume",
+	"href":about.url.resume
+}]
 ---
 
 <main id="about">
 	<div class="div--about">
-		<!-- <span>About</span> -->
-		 <Image src={'/dev.gif'} alt="dev" title="dev" width="800" height="200" style="width: 70%; height: auto" />
 		<p>{about.bio.split('.').map(sentence => <span>{sentence}.</span>)}</p>
-		<a href={about.url.resume} target="_blank">resume</a>
+		<nav>
+			{links.map(link=>{return <a href={link.href} target="_blank">{link.label} <SvgLink /></a>})}
+		</nav>
 	</div>
 	<div class="div--skills">
-		<span>&#60; Skills /&#62;</span>
+		<!-- <span>&#60; Skills /&#62;</span> -->
 		<nav>
 			{about.skills.map(skill => {
 				imgSrc=`/skills/${skill}.png`;
-				return <Image src={imgSrc} width="100" height="100" style="width: calc(20% - 10px); height: auto;" title={skill} alt={skill} />;
+				return <Image src={imgSrc} width="100" height="100" style="width: calc(16.66% - 10px); height: auto;" title={skill} alt={skill} />;
 			})
 			}
 		</nav>

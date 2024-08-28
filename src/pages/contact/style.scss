@@ -10,7 +10,6 @@
   }
 
   form {
-    border-top: 1px solid var(--color-lightgray) !important;
     padding-top: 20px;
     display: flex;
     flex-direction: column;
@@ -38,15 +37,19 @@
         background-color: var(--color-black);
         color: var(--color-white);
         border: 1px solid var(--color-white);
+        outline: 2px solid var(--color-black);
+
         font-size: 16px;
         padding: 10px 20px;
-        text-transform: uppercase;
+        margin:4px;
+        text-transform: capitalize;
         cursor: pointer;
 
         &:hover {
           background-color: var(--color-white);
           color: var(--color-black);
           border: 1px solid var(--color-black);
+          outline: 2px solid var(--color-white);
         }
       }
     }
