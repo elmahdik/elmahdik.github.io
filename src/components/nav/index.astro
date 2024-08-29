@@ -19,7 +19,7 @@ const menuItems=[{
 ---
 
 <nav id="nav--bar" class="nav--bar">
-    {menuItems.map(item => <a href={`#`+item.label} id={`a-`+item.label} title={item.label}><i class={`bi bi-${item.icon}`}></i></a>)}
+    {menuItems.map(item => <a href={`#`+item.label} id={`a-`+item.label} title={item.label}><i class={`bi bi-${item.icon}`}></i> <span>{item.label}</span></a>)}
     <ThemeIcon />
 </nav>
 
