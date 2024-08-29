@@ -2,36 +2,7 @@
   display: flex;
   flex-direction: column;
   position: relative;
-
-  nav {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-
-    a {
-      background-color: var(--color-black);
-      color: var(--color-white);
-      border: 1px solid var(--color-white);
-      outline: 2px solid var(--color-black);
-      font-size: 16px;
-      padding: 10px;
-      gap:10px;
-      margin:4px;
-
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-decoration: none;
-    
-      &:hover {
-        background-color: var(--color-white);
-        color: var(--color-black);
-        border: 1px solid var(--color-black);
-        outline: 2px solid var(--color-white);
-      }
-    }
-  }
-
+  
   p {
     color: var(--color-black);
     font-size: 38px;
