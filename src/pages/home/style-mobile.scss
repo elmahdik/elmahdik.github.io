@@ -9,5 +9,16 @@
                 font-size: 22px !important;
             }
         }
+        ul{
+            li{
+                margin:5px !important;
+                padding: 5px !important;
+
+                span{
+                    -webkit-text-stroke: 2px var(--color-black) !important;
+                    font-size: 40px !important;
+                }
+            }
+        }
     }
 }
