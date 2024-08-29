@@ -6,6 +6,18 @@
 
         div {
             justify-content: center !important;
+            
+            &#div--contact {
+                order:1;
+            }
+
+            &#div--links {
+                order:2;
+            }
+
+            &#div--copyright{
+                order:3;
+            }
         }
     }
 }
