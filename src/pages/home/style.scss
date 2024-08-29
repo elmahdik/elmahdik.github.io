@@ -42,9 +42,28 @@
     }
 
     p {
+        // span {
+        //     color: var(--color-gray) !important;
+        //     font-size: 32px !important;
+        // }
+        margin:0 auto;
+        width: 80%;
+
         span {
-            color: var(--color-gray) !important;
-            font-size: 32px !important;
+            color: var(--color-black);
+            font-size: 62px;
+            width:fit-content;
+            justify-self: center;
+        }
+
+        #span--position{
+            color: var(--color-gray);
+            border-bottom: 1px dashed var(--color-gray);
+            font-size: 46px;
+        }
+
+        #span--location {
+            font-size: 38px;
         }
     }
 
