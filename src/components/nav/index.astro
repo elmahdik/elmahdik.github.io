@@ -26,10 +26,17 @@ const menuItems=[{
 <script>
     let navBar = document.querySelector('#nav--bar');
 
+    const capitalizeFirstLetter = (string: string) => {
+        return string.charAt(0).toUpperCase() + string.slice(1);
+    }
+
     const setActiveLink = (name : string) => {
         document.querySelectorAll('#nav--bar a').forEach(a=>{
-            if (a.id===`a-${name}`) a.classList.add('active');
-            else a.classList.remove('active');
+            if (a.id===`a-${name}`) {
+                a.classList.add('active');
+                document.title=`${capitalizeFirstLetter(name)}`;
+                history.pushState({}, '', '#'+name);
+            } else a.classList.remove('active');
         })
     }
 

@@ -33,9 +33,21 @@ const { title } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 
 		<script type="text/javascript">
+			// redirection
 			if (window.location.hostname === "elmahdik.github.io" || window.location.hostname.endsWith(".github.io")) {
 				window.location.href = "https://elmahdik.netlify.app";
 			}
+
+			// tabs
+			const capitalizeFirstLetter = (string) => {
+				return string.charAt(0).toUpperCase() + string.slice(1);
+			}
+			
+			document.addEventListener("visibilitychange", (event) => {
+				const titleHash = window.location.hash.substring(1);
+
+				document.title = (document.visibilityState == "visible") ? capitalizeFirstLetter(titleHash) : "Come back !";
+			});
 		</script>
 	</head>
 	<body>
