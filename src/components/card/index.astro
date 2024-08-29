@@ -28,6 +28,14 @@ const {index, imgSrc, urlVisit, urlGithub, label, description, skills } = Astro.
 				<a href={urlVisit} target="_blank" class="a-visit">Demo <i class="bi bi-arrow-up-right"></i></a>
 				<a href={urlGithub} target="_blank" class="a-github">Source <i class="bi bi-arrow-up-right"></i></a>
 			</nav>
+			<iframe 
+				src={`https://ghbtns.com/github-btn.html?user=ElmahdiK&repo=${label}&type=star&count=true&size=large`} 
+				frameborder="0"
+				scrolling="0"
+				width="170"
+				height="30"
+				title="GitHub">
+			</iframe>
 		</div>
 		<ul>
 			{skills.map((skill : string) => <li><span>{skill}</span></li>)}
