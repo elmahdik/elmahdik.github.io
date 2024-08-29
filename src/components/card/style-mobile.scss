@@ -4,10 +4,10 @@
         padding: 0px;
         margin: 0px;
         height: 100vh;
-        flex-direction: column !important;
+        flex-direction: column-reverse !important;
 
         .div-infos{
-            flex-direction: column-reverse;
+            // flex-direction: column-reverse;
         }
         .div-infos, .div-img{
             flex:1;
