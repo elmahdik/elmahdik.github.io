@@ -18,6 +18,7 @@
         "typescript",
         "sass",
         "tailwindcss",
+        "bootstrap",
         "astro",
         "react",
         "nextjs",
