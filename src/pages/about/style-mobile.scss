@@ -2,6 +2,16 @@
   #about {
     flex-direction: column;
     
+    .div--skills {
+
+      a {
+        width: calc(25% - 4px) !important;
+      }
+
+      span {
+
+      }
+    }
     .div--about {
   
       p {

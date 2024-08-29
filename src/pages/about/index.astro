@@ -23,7 +23,12 @@ const links = [{
 		<nav>
 			{about.skills.map(skill => {
 				imgSrc=`/skills/${skill}.png`;
-				return <Image src={imgSrc} width="100" height="100" style="width: calc(16.66% - 10px); height: auto;" title={skill} alt={skill} />;
+				return (
+					<a href={'javascript:return false;'} title={skill}>
+						<Image src={imgSrc} width="100" height="100" style="width:100%;height:auto;" title={skill} alt={skill} />
+						<span>{skill}</span>
+					</a>
+				);
 			})
 			}
 		</nav>
