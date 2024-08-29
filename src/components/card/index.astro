@@ -2,7 +2,6 @@
 import { Image } from 'astro:assets';
 import './style.scss';
 import './style-mobile.scss';
-import SvgLink from '../svgLink/index.astro';
 
 interface Props {
 	index: number;
@@ -26,8 +25,8 @@ const {index, imgSrc, urlVisit, urlGithub, label, description, skills } = Astro.
 			<h2>{label}</h2>
 			<p>{description}</p>
 			<nav>
-				<a href={urlVisit} target="_blank" class="a-visit">Demo <SvgLink /></a>
-				<a href={urlGithub} target="_blank" class="a-github">Source <SvgLink /></a>
+				<a href={urlVisit} target="_blank" class="a-visit">Demo <i class="bi bi-arrow-up-right"></i></a>
+				<a href={urlGithub} target="_blank" class="a-github">Source <i class="bi bi-arrow-up-right"></i></a>
 			</nav>
 		</div>
 		<ul>

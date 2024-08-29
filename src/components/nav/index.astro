@@ -3,11 +3,23 @@ import './style.scss';
 import './style-mobile.scss';
 import ThemeIcon from '../themeIcon/index.astro';
 
-const menuItems=['home','about','portfolio','contact'];
+const menuItems=[{
+    "label":'home',
+    "icon":"house"
+},{
+    "label":'about',
+    "icon":"person"
+},{
+    "label":'portfolio',
+    "icon":"bag"
+},{
+    "label":'contact',
+    "icon":"envelope"
+}];
 ---
 
 <nav id="nav--bar" class="nav--bar">
-    {menuItems.map(item => <a href={`#`+item} id={`a-`+item}>{item}</a>)}
+    {menuItems.map(item => <a href={`#`+item.label} id={`a-`+item.label} title={item.label}><i class={`bi bi-${item.icon}`}></i></a>)}
     <ThemeIcon />
 </nav>
 

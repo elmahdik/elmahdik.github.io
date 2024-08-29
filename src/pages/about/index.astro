@@ -1,18 +1,11 @@
 ---
 import './style.scss';
 import './style-mobile.scss';
-import SvgLink from '../../components/svgLink/index.astro';
 import about from '../../data/about.json';
 import { Image } from 'astro:assets';
 let imgSrc='';
 
 const links = [{
-	"label":"LinkedIn",
-	"href":about.url.linkedin
-},{
-	"label":"Github",
-	"href":about.url.githubSource
-},{
 	"label":"Resume",
 	"href":about.url.resume
 }]
@@ -22,7 +15,7 @@ const links = [{
 	<div class="div--about">
 		<p>{about.bio.split('.').map(sentence => <span>{sentence}.</span>)}</p>
 		<nav>
-			{links.map(link=>{return <a href={link.href} target="_blank">{link.label} <SvgLink /></a>})}
+			{links.map(link=>{return <a href={link.href} target="_blank"><i class="bi bi-file-pdf"></i> {link.label}</a>})}
 		</nav>
 	</div>
 	<div class="div--skills">

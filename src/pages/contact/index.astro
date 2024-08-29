@@ -1,10 +1,25 @@
 ---
 import './style.scss';
 import './style-mobile.scss';
+import about from '../../data/about.json';
+
+const links =[{
+	"label":"LinkedIn",
+	"href":about.url.linkedin
+},{
+	"label":"Github",
+	"href":about.url.githubSource
+},,{
+	"label":"Discord",
+	"href":about.url.discord
+}]
 ---
 
 <main id="contact">
     <p>Contact</p>
+    <nav>
+			{links.map(link=>{return <a href={link?.href} target="_blank"><i class={`bi bi-${link?.label.toLowerCase()}`}></i> {link?.label}</a>})}
+    </nav>
     <form method="POST" name="contact" id="form_contact">
         <input type="text" name="name" placeholder="Name *" required>
         <input type="email" name="email" placeholder="Email *" required>
@@ -12,7 +27,7 @@ import './style-mobile.scss';
         <div>
           <span>Please verify you are a human 👉</span>
           <input type="text" placeholder="Answer" id="input-answer" name="answer" required />
-          <button id="btn-submit">send</button>
+          <button id="btn-submit">send <i class="bi bi-send"></i></button>
         </div>
     </form>
 </main>
