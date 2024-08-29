@@ -30,5 +30,9 @@
         "github",
         "visualstudio",
         "linux"
-    ]
+    ],
+    "contact":{
+        "email":"elmahdi.korfed@gmail.com",
+        "phone":"+33686089808"
+    }
 }

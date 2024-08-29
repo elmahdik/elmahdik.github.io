@@ -1,0 +1,82 @@
+footer {
+    background-color: var(--color-black);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    div{
+        padding: 40px;
+        flex:1;
+
+        &#div--contact {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+
+            p{
+                color: var(--color-white);
+                font-size: 18px;
+                margin-bottom: 20px;
+                font-weight: bold;
+            }
+
+            nav{
+                display: flex;
+                flex-direction: column;
+                gap:4px;
+
+                a{
+                    color: var(--color-gray);
+                    text-decoration: none;
+
+                    &:hover{
+                        color:var(--color-white);
+                    }
+                }
+            }
+        }
+
+        &#div--copyright{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            a {
+                color:var(--color-gray);
+                text-decoration: none;
+
+                &:hover{
+                    color:var(--color-white);
+                }
+            }
+        }
+
+        &#div--links {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+
+            nav{
+                display: flex;
+                gap:10px;
+
+                a{
+                    background-color: var(--color-white);
+                    color: var(--color-black);
+                    border: 1px solid var(--color-black);
+                    outline: 2px solid var(--color-white);
+                    font-size: 18px;
+                    padding: 10px;
+    
+                    &:hover {
+                      background-color: var(--color-black);
+                      color: var(--color-white);
+                      border: 1px solid var(--color-white);
+                      outline: 2px solid var(--color-black);
+                    }
+                } 
+            }
+        }
+    }
+}

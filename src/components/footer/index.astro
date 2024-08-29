@@ -1,0 +1,32 @@
+---
+import './style.scss';
+import './style-mobile.scss';
+import about from '../../data/about.json';
+const links =[{
+	"label":"LinkedIn",
+	"href":about.url.linkedin
+},{
+	"label":"Github",
+	"href":about.url.githubSource
+},,{
+	"label":"Discord",
+	"href":about.url.discord
+}]
+---
+<footer>
+    <div id="div--contact">
+        <p>Get In Touch.</p>
+        <nav>
+            <a href={`mailto:${about.contact.email}`}>Email : {about.contact.email}</a>
+            <a href={`tel:${about.contact.phone}`}>Phone : {about.contact.phone}</a>
+        </nav>
+    </div>
+    <div id="div--copyright">
+        <a href="/">©2025 Elmahdi Korfed</a>
+    </div>
+    <div id="div--links">
+        <nav>
+			{links.map(link=>{return <a href={link?.href} target="_blank"><i class={`bi bi-${link?.label.toLowerCase()}`}></i></a>})}
+        </nav>
+    </div>
+</footer>
