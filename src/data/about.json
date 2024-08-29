@@ -10,5 +10,25 @@
         "githubSource":"https://github.com/ElmahdiK/",
         "discord":"https://discordapp.com/users/elmahdik"
     },
-    "skills":["html5","css3","javascript", "typescript","sass","astro","react", "angular","jquery","nodejs","expressjs","php","python","mysql","mongodb","github","visualstudio","linux"]
+    "skills":[
+        "html5",
+        "css3",
+        "javascript",
+        "typescript",
+        "sass",
+        "astro",
+        "react",
+        "angular",
+        "jquery",
+        "nodejs",
+        "expressjs",
+        "php",
+        "python",
+        "coldfusion",
+        "mysql",
+        "mongodb",
+        "github",
+        "visualstudio",
+        "linux"
+    ]
 }

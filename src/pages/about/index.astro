@@ -15,7 +15,7 @@ const links = [{
 	<div class="div--about">
 		<p>{about.bio.split('.').map(sentence => <span>{sentence}.</span>)}</p>
 		<nav>
-			{links.map(link=>{return <a href={link.href} target="_blank"><i class="bi bi-file-pdf"></i> {link.label}</a>})}
+			{links.map(link=>{return <a href={link.href} title={link.label} target="_blank"><i class="bi bi-file-pdf"></i> {link.label}</a>})}
 		</nav>
 	</div>
 	<div class="div--skills">
