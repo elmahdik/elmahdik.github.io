@@ -1,6 +1,7 @@
 ---
 import './style.scss';
 import './style-mobile.scss';
+import ThemeIcon from '../themeIcon/index.astro';
 import about from '../../data/about.json';
 const links =[{
 	"label":"LinkedIn",
@@ -27,6 +28,7 @@ const links =[{
     <div id="div--links">
         <nav>
 			{links.map(link=>{return <a href={link?.href} target="_blank"><i class={`bi bi-${link?.label.toLowerCase()}`}></i></a>})}
+            <ThemeIcon />
         </nav>
     </div>
 </footer>
