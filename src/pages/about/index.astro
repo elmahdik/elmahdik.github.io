@@ -19,14 +19,13 @@ const links = [{
 		</nav>
 	</div>
 	<div class="div--skills">
-		<!-- <span>&#60; Skills /&#62;</span> -->
 		<nav>
 			{about.skills.map(skill => {
-				imgSrc=`/skills/${skill}.png`;
+				imgSrc=`/skills/${skill.label}.png`;
 				return (
-					<a href={'javascript:return false;'} title={skill}>
-						<Image src={imgSrc} width="100" height="100" style="width:100%;height:auto;" title={skill} alt={skill} />
-						<span>{skill}</span>
+					<a href={skill.link} title={skill.label} target="_blank">
+						<Image src={imgSrc} width="100" height="100" style="width:100%;height:auto;" title={skill.label} alt={skill.label} />
+						<span>{skill.label}</span>
 					</a>
 				);
 			})

@@ -6,6 +6,8 @@
   --color-gray: #999;
   --color-grey: #aaa;
   --color-lightgray: #ddd;
+  --color-black-one: #111;
+  --color-black-four: #444;
 }
 
 * {
@@ -26,6 +28,8 @@ html {
     --color-black: #fff !important;
     --color-white: #222 !important;
     --color-grey: #000 !important;
+    --color-black-one: #eee !important;
+    --color-black-four: #fafafa !important;
   }
 
   body {

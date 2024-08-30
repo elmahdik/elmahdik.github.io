@@ -5,7 +5,7 @@
   .div--skills {
     background-color: var(--color-black);
     flex:1;
-    padding: 10%;
+    padding: 4%;
     justify-content: center;
     align-items: center;
     align-content: center;
@@ -30,13 +30,22 @@
 
         img {
           cursor: pointer;
+          box-shadow: 2px 2px 4px var(--color-black-one), -2px -2px 2px var(--color-black-four);
+          border: 1px solid var(--color-black);
+          padding: 8px;
+          border-radius: 8px;
+
+          &:hover{
+            background-color: var(--color-gray);
+            // border: 1px solid var(--color-white);
+          }
         }
 
         span {
-          color: var(--color-white);
+          color: var(--color-grey);
           font-size: 14px;
-          padding: 4px 0px;
-          text-transform: lowercase;
+          padding: 8px 0px;
+          // text-transform: lowercase;
         }
       }
     }
