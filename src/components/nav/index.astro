@@ -1,72 +1,91 @@
 ---
-import './style.scss';
-import './style-mobile.scss';
-import ThemeIcon from '../themeIcon/index.astro';
+import "./style.scss";
+import "./style-mobile.scss";
+import ThemeIcon from "../themeIcon/index.astro";
 
-const menuItems=[{
-    "label":'home',
-    "icon":"house"
-},{
-    "label":'about',
-    "icon":"person"
-},{
-    "label":'portfolio',
-    "icon":"bag"
-},{
-    "label":'contact',
-    "icon":"envelope"
-}];
+const menuItems = [
+  {
+    label: "home",
+    icon: "house",
+  },
+  {
+    label: "about",
+    icon: "person",
+  },
+  {
+    label: "portfolio",
+    icon: "bag",
+  },
+  {
+    label: "contact",
+    icon: "envelope",
+  },
+];
 ---
 
 <nav id="nav--bar" class="nav--bar">
-    {menuItems.map(item => <a href={`#`+item.label} id={`a-`+item.label} title={item.label}><i class={`bi bi-${item.icon}`}></i> <span>{item.label}</span></a>)}
+  <p id="p--name">Elmahdi KORFED</p>
+  <div>
+    {
+      menuItems.map((item) => (
+        <a href={`#` + item.label} id={`a-` + item.label} title={item.label}>
+          <i class={`bi bi-${item.icon}`} /> <span>{item.label}</span>
+        </a>
+      ))
+    }
     <ThemeIcon />
+  </div>
 </nav>
 
 <script>
-    let navBar = document.querySelector('#nav--bar');
+  let navBar = document.querySelector("#nav--bar");
 
-    const capitalizeFirstLetter = (string: string) => {
-        return string.charAt(0).toUpperCase() + string.slice(1);
-    }
+  const capitalizeFirstLetter = (string: string) => {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+  };
 
-    const setActiveLink = (name : string) => {
-        document.querySelectorAll('#nav--bar a').forEach(a=>{
-            if (a.id===`a-${name}`) {
-                a.classList.add('active');
-                document.title=`${capitalizeFirstLetter(name)}`;
-                history.pushState({}, '', '#'+name);
-            } else a.classList.remove('active');
-        })
-    }
-
-    document.querySelectorAll('#nav--bar a[id^="a-"]').forEach(a => {
-        a.addEventListener('click',(e)=> {
-            setActiveLink((e.target as HTMLLinkElement).textContent!);
-        })
+  const setActiveLink = (name: string) => {
+    document.querySelectorAll("#nav--bar a").forEach((a) => {
+      if (a.id === `a-${name}`) {
+        a.classList.add("active");
+        document.title = `${capitalizeFirstLetter(name)}`;
+        history.pushState({}, "", "#" + name);
+      } else a.classList.remove("active");
     });
+  };
 
-    document.querySelectorAll('main').forEach(main => {
-        main.addEventListener('mouseenter',(e)=> {
-            setActiveLink((e.target as HTMLElement).id);
-        })
+  document.querySelectorAll('#nav--bar a[id^="a-"]').forEach((a) => {
+    a.addEventListener("click", (e) => {
+      setActiveLink((e.target as HTMLLinkElement).textContent!);
     });
+  });
 
-    // window.addEventListener("hashchange", () => {
-    //     setActiveLink(window.location.hash.substring(1));
-    // }, false);
+  document.querySelectorAll("main").forEach((main) => {
+    main.addEventListener("mouseenter", (e) => {
+      setActiveLink((e.target as HTMLElement).id);
+    });
+  });
 
-    window.onscroll = function() {myFunction()};
+  // window.addEventListener("hashchange", () => {
+  //     setActiveLink(window.location.hash.substring(1));
+  // }, false);
 
-    function myFunction() {
-        if ((document.querySelector('#home') as HTMLElement)?.getBoundingClientRect().bottom <= 0){
-            if (navBar?.classList.contains('hidden')) {
-                navBar?.classList.remove('hidden');
-            }
-        }else {
-            if (!navBar?.classList.contains('hidden')) {
-                navBar?.classList.add('hidden');
-            }
-        }
+  window.onscroll = function () {
+    myFunction();
+  };
+
+  function myFunction() {
+    if (
+      (document.querySelector("#home") as HTMLElement)?.getBoundingClientRect()
+        .bottom <= 0
+    ) {
+      if (navBar?.classList.contains("hidden")) {
+        navBar?.classList.remove("hidden");
+      }
+    } else {
+      if (!navBar?.classList.contains("hidden")) {
+        navBar?.classList.add("hidden");
+      }
     }
+  }
 </script>

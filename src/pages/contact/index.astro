@@ -1,20 +1,28 @@
 ---
-import './style.scss';
-import './style-mobile.scss';
+import "./style.scss";
+import "./style-mobile.scss";
 ---
 
 <main id="contact">
-    <p>Contact</p>
-    <form method="POST" name="contact" id="form_contact">
-        <input type="text" name="name" placeholder="Name *" required>
-        <input type="email" name="email" placeholder="Email *" required>
-        <textarea placeholder="Write your message" name="message" required></textarea>
-        <div>
-          <span>Please verify you are a human 👉</span>
-          <input type="text" placeholder="Answer" id="input-answer" name="answer" required />
-          <button id="btn-submit">send <i class="bi bi-send"></i></button>
-        </div>
-    </form>
+  <p>✍️ Contact</p>
+  <form method="POST" name="contact" id="form_contact">
+    <input type="text" name="name" placeholder="Name *" required />
+    <input type="email" name="email" placeholder="Email *" required />
+    <textarea placeholder="Write your message" name="message" required
+      >Hello Elmahdi,
+    </textarea>
+    <div>
+      <span>Please 🤖 verify you are a human 👉</span>
+      <input
+        type="text"
+        placeholder="Answer"
+        id="input-answer"
+        name="answer"
+        required
+      />
+      <button id="btn-submit">send <i class="bi bi-send"></i></button>
+    </div>
+  </form>
 </main>
 
 <script>

@@ -1,56 +1,65 @@
 ---
-import '../styles/global.scss';
+import "../styles/global.scss";
 
 interface Props {
-	title: string;
+  title: string;
 }
 const { title } = Astro.props;
 ---
 
 <!doctype html>
 <html lang="en">
-	<head>
-		 <!-- meta tags: HTML -->
-		 <meta charset="UTF-8">
-		 <title>{title}</title>
-		 <meta name="author" content="Elmahdi KORFED" />
-		 <meta name="title" content="Elmahdi KORFED">
-		 <meta name="description" content="Elmahdi KORFED, développeur web France" />
-		 <meta name="keywords" content="Elmahdi Korfed, Developer, Web, France" />
-		 <meta name="viewport" content="width=device-width" />
-		 <meta name="theme-color" content="#fff">
-	   
-		 <!-- meta tags: OPEN GRAPH -->
-		 <meta property="og:type" content="website" />
-		 <meta property="og:site_name" content="Elmahdi KORFED" />
-		 <meta property="og:title" content="Elmahdi KORFED" />
-		 <meta property="og:image" content="/ek.webp" />
-		 <meta property="og:description" content="Elmahdi KORFED, développeur web France" />
-		 <meta property="og:url" content="https://elmahdik.github.io/" />
-		 <meta property="og:locale" content="en_US" />
+  <head>
+    <!-- meta tags: HTML -->
+    <meta charset="UTF-8" />
+    <title>{title}</title>
+    <meta name="author" content="Elmahdi KORFED" />
+    <meta name="title" content="Elmahdi KORFED" />
+    <meta name="description" content="Elmahdi KORFED, développeur web France" />
+    <meta name="keywords" content="Elmahdi Korfed, Developer, Web, France" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="theme-color" content="#fff" />
 
-		<link rel="icon" type="image/svg+xml" href="/logo/icon_16.ico" />
-		<meta name="generator" content={Astro.generator} />
+    <!-- meta tags: OPEN GRAPH -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Elmahdi KORFED" />
+    <meta property="og:title" content="Elmahdi KORFED" />
+    <meta property="og:image" content="/cv/ek.jpeg" />
+    <meta
+      property="og:description"
+      content="Elmahdi KORFED, développeur web France"
+    />
+    <meta property="og:url" content="https://elmahdik.github.io/" />
+    <meta property="og:locale" content="en_US" />
 
-		<script type="text/javascript">
-			// redirection
-			if (window.location.hostname === "elmahdik.github.io" || window.location.hostname.endsWith(".github.io")) {
-				window.location.href = "https://elmahdik.netlify.app";
-			}
+    <link rel="icon" type="image/svg+xml" href="/logo/icon_16.ico" />
+    <meta name="generator" content={Astro.generator} />
 
-			// tabs
-			const capitalizeFirstLetter = (string) => {
-				return string.charAt(0).toUpperCase() + string.slice(1);
-			}
-			
-			document.addEventListener("visibilitychange", (event) => {
-				const titleHash = window.location.hash.substring(1);
+    <script type="text/javascript">
+      // redirection
+      if (
+        window.location.hostname === "elmahdik.github.io" ||
+        window.location.hostname.endsWith(".github.io")
+      ) {
+        window.location.href = "https://elmahdik.netlify.app";
+      }
 
-				document.title = (document.visibilityState == "visible") ? capitalizeFirstLetter(titleHash) : "Come back !";
-			});
-		</script>
-	</head>
-	<body>
-		<slot />
-	</body>
+      // tabs
+      const capitalizeFirstLetter = (string) => {
+        return string.charAt(0).toUpperCase() + string.slice(1);
+      };
+
+      document.addEventListener("visibilitychange", (event) => {
+        const titleHash = window.location.hash.substring(1);
+
+        document.title =
+          document.visibilityState == "visible"
+            ? capitalizeFirstLetter(titleHash)
+            : "Come back !";
+      });
+    </script>
+  </head>
+  <body>
+    <slot />
+  </body>
 </html>

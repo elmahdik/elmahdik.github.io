@@ -1,6 +1,7 @@
 #portfolio {
-  
   .ul--cardgrid {
+    width: calc(100% - 0px);
+
     display: flex;
     flex-wrap: wrap;
   }

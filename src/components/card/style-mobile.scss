@@ -1,17 +1,6 @@
 @media (width <= 1260px) {
     .li--card {
-        width: calc(100% - 0px);
-        padding: 0px;
-        margin: 0px;
-        height: 100vh;
-        flex-direction: column-reverse !important;
-
-        .div-infos{
-            // flex-direction: column-reverse;
-        }
-        .div-infos, .div-img{
-            flex:1;
-            width: auto;
-        }
+        width: calc(100% - 10px);
+        margin: 5px;
     }
 }

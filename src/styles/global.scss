@@ -1,13 +1,13 @@
-@import url('../../node_modules/bootstrap-icons/font/bootstrap-icons.css');
+@import url("../../node_modules/bootstrap-icons/font/bootstrap-icons.css");
 
 :root {
-  --color-black: #222;
+  --color-black: #2e314c;
   --color-white: #fff;
   --color-gray: #999;
   --color-grey: #aaa;
   --color-lightgray: #ddd;
-  --color-black-one: #111;
-  --color-black-four: #444;
+  --color-black-one: #eee;
+  --color-black-four: #fafafa;
 }
 
 * {
@@ -26,10 +26,10 @@ html {
   /* ---- darkMode ---- */
   &.dark {
     --color-black: #fff !important;
-    --color-white: #222 !important;
+    --color-white: #2e314c !important;
     --color-grey: #000 !important;
-    --color-black-one: #eee !important;
-    --color-black-four: #fafafa !important;
+    --color-black-one: #111 !important;
+    --color-black-four: #444 !important;
   }
 
   body {

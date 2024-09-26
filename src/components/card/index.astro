@@ -1,44 +1,53 @@
 ---
-import { Image } from 'astro:assets';
-import './style.scss';
-import './style-mobile.scss';
+import { Image } from "astro:assets";
+import "./style.scss";
+import "./style-mobile.scss";
 
 interface Props {
-	index: number;
-	imgSrc: string;
-	urlVisit: string;
-	urlGithub: string;
-	label: string;
-	description: string;
-	skills: string[];
+  index: number;
+  imgSrc: string;
+  urlVisit: string;
+  urlGithub: string;
+  label: string;
+  description: string;
+  skills: string[];
 }
-const {index, imgSrc, urlVisit, urlGithub, label, description, skills } = Astro.props;
+const { index, imgSrc, urlVisit, urlGithub, label, description, skills } =
+  Astro.props;
 ---
 
-<li class="li--card" style={index%2===0 ? 'flex-direction:row-reverse' : ''}>
-<!-- <li class="li--card"> -->
-	<div class="div-img">
-		<Image src={imgSrc} alt={label} title={label} width="1200" height="600" style="width: auto; height: auto;" />
-	</div>
-	<div class="div-infos">
-		<div class="div-infos-content">
-			<h2>{label}</h2>
-			<p>{description}</p>
-			<nav>
-				<a href={urlVisit} target="_blank" class="a-visit">Demo <i class="bi bi-arrow-up-right"></i></a>
-				<a href={urlGithub} target="_blank" class="a-github">Source <i class="bi bi-arrow-up-right"></i></a>
-			</nav>
-			<iframe 
-				src={`https://ghbtns.com/github-btn.html?user=ElmahdiK&repo=${label}&type=star&count=true&size=large`} 
-				frameborder="0"
-				scrolling="0"
-				width="170"
-				height="30"
-				title="GitHub">
-			</iframe>
-		</div>
-		<ul>
-			{skills.map((skill : string) => <li><span>{skill}</span></li>)}
-		</ul>
-	</div>
+<li class="li--card">
+  <h2>{label}</h2>
+  <div class="div-img">
+    <Image
+      src={imgSrc}
+      alt={label}
+      title={label}
+      width="1200"
+      height="600"
+      style="width: 100%; height: 20vh;"
+    />
+  </div>
+  <div class="div-infos">
+    <div class="div-infos-content">
+      <p>{description}</p>
+      <nav>
+        <a href={urlVisit} target="_blank" class="a-visit"
+          >Demo <i class="bi bi-arrow-up-right"></i></a
+        >
+        <a href={urlGithub} target="_blank" class="a-github"
+          >Source <i class="bi bi-arrow-up-right"></i></a
+        >
+      </nav>
+    </div>
+    <ul>
+      {
+        skills.map((skill: string) => (
+          <li>
+            <span>{skill}</span>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
 </li>

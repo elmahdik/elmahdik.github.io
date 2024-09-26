@@ -1,43 +1,112 @@
 {
-    "firstname":"Elmahdi",
-    "lastname":"Korfed",
-    "sentence":"Welcome",
-    "bio":"Passionate about the web, I had the opportunity to work in various fields as a web/mobile developer - back and front: private company, public research laboratory, startup and individuals. I created this website in order to share with you some of my personal web projects. Have a great visit",
-    "url":{
-        "resume":"/cv/resume-KORFED.pdf",
-        "linkedin":"https://linkedin.com/in/elmahdikorfed",
-        "githubPage":"https://elmahdik.github.io/",
-        "githubSource":"https://github.com/ElmahdiK/",
-        "discord":"https://discordapp.com/users/elmahdik",
-        "whatsapp":"https://wa.me/33686089808?text=Hello%20Elmahdi%20!"
+    "firstname": "Elmahdi",
+    "lastname": "Korfed",
+    "sentence": "Welcome",
+    "bio": "Passionate about the web, I had the opportunity to work in various fields as a web/mobile developer - back and front: private company, public research laboratory, startup and individuals. I created this website in order to share with you some of my personal web projects. Have a great visit !",
+    "url": {
+        "resume": "/cv/resume-KORFED.pdf",
+        "linkedin": "https://linkedin.com/in/elmahdikorfed",
+        "githubPage": "https://elmahdik.github.io/",
+        "githubSource": "https://github.com/ElmahdiK/",
+        "discord": "https://discordapp.com/users/elmahdik",
+        "whatsapp": "https://wa.me/33686089808?text=Hello%20Elmahdi%20!"
     },
-    "skills":[
-        {"label": "HTML", "link": "https://developer.mozilla.org/en-US/docs/Web/HTML"},
-        {"label": "CSS", "link": "https://developer.mozilla.org/en-US/docs/Web/CSS"},
-        {"label": "JavaScript", "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"},
-        {"label": "TypeScript", "link": "https://www.typescriptlang.org/"},
-        {"label": "Sass", "link": "https://sass-lang.com/"},
-        {"label": "tailwindcss", "link": "https://tailwindcss.com/"},
-        {"label": "Bootstrap","link":"https://getbootstrap.com/"},
-        {"label": "Astro","link":"https://astro.build/"},
-        {"label": "React","link":"https://react.dev/"},
-        {"label": "Next.js","link":"https://nextjs.org/"},
-        {"label": "Angular","link":"https://angular.dev/"},
-        {"label": "jQuery","link":"https://jquery.com/"},
-        {"label": "Node.js","link":"https://nodejs.org/"},
-        {"label": "Express","link":"https://expressjs.com/"},
-        {"label": "php","link":"https://www.php.net/"},
-        {"label": "Python","link":"https://www.python.org/"},
-        {"label": "ColdFusion","link":"https://www.adobe.com/products/coldfusion-family.html"},
-        {"label": "MySQL","link":"https://www.mysql.com/"},
-        {"label": "MongoDB","link":"https://www.mongodb.com/"},
-        {"label": "POSTMAN","link":"https://www.postman.com/"},
-        {"label": "GitHub","link":"https://github.com/"},
-        {"label": "VS Code","link":"https://code.visualstudio.com/"},
-        {"label": "Linux","link":"https://www.linux.org/"}
+    "skills": [
+        {
+            "label": "HTML",
+            "link": "https://developer.mozilla.org/en-US/docs/Web/HTML"
+        },
+        {
+            "label": "CSS",
+            "link": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+        },
+        {
+            "label": "JavaScript",
+            "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+        },
+        {
+            "label": "TypeScript",
+            "link": "https://www.typescriptlang.org/"
+        },
+        {
+            "label": "Sass",
+            "link": "https://sass-lang.com/"
+        },
+        {
+            "label": "tailwindcss",
+            "link": "https://tailwindcss.com/"
+        },
+        {
+            "label": "Bootstrap",
+            "link": "https://getbootstrap.com/"
+        },
+        {
+            "label": "Astro",
+            "link": "https://astro.build/"
+        },
+        {
+            "label": "React",
+            "link": "https://react.dev/"
+        },
+        {
+            "label": "Next.js",
+            "link": "https://nextjs.org/"
+        },
+        {
+            "label": "Angular",
+            "link": "https://angular.dev/"
+        },
+        {
+            "label": "jQuery",
+            "link": "https://jquery.com/"
+        },
+        {
+            "label": "Node.js",
+            "link": "https://nodejs.org/"
+        },
+        {
+            "label": "Express",
+            "link": "https://expressjs.com/"
+        },
+        {
+            "label": "php",
+            "link": "https://www.php.net/"
+        },
+        {
+            "label": "Python",
+            "link": "https://www.python.org/"
+        },
+        {
+            "label": "ColdFusion",
+            "link": "https://www.adobe.com/products/coldfusion-family.html"
+        },
+        {
+            "label": "MySQL",
+            "link": "https://www.mysql.com/"
+        },
+        {
+            "label": "MongoDB",
+            "link": "https://www.mongodb.com/"
+        },
+        {
+            "label": "POSTMAN",
+            "link": "https://www.postman.com/"
+        },
+        {
+            "label": "GitHub",
+            "link": "https://github.com/"
+        },
+        {
+            "label": "VS Code",
+            "link": "https://code.visualstudio.com/"
+        },
+        {
+            "label": "Linux",
+            "link": "https://www.linux.org/"
+        }
     ],
-    "contact":{
-        "email":"elmahdi.korfed@gmail.com",
-        "phone":"+33686089808"
+    "contact": {
+        "email": "elmahdi.korfed@gmail.com",
+        "phone": "+33686089808"
     }
 }

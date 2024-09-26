@@ -1,27 +1,29 @@
 ---
-import './style.scss';
-import './style-mobile.scss';
-import about from '../../data/about.json';
-
+import "./style.scss";
+import "./style-mobile.scss";
 ---
 
 <main id="home">
-	<!-- <ul>{[...about.skills,...about.skills, ...about.skills, ...about.skills, ...about.skills].map(skill=><li><span>{skill}</span></li>)}</ul> -->
-	<!-- <a href="/" class="fadeIn">{about.firstname.split('').map(e=><span>{e}</span>)} {about.lastname.split('').map(e=><span>{e}</span>)}</a> -->
-	<!-- <p class="fadeIn">{about.sentence.split('').map(e=><span>{e}</span>)} <span class="span-hand">👋</span></p> -->
-	 <p>
-		<span>Hi 👋, I'm <b>Elmahdi</b> 👨🏻‍💻</span><br/>
-		<span id="span--position"></span><br/><br/>
-		<span id="span--location">📍 Paris, France</span>
-	</p>
+  <p>
+    <span>Hi <span class="greetings">👋</span> I'm <b>Elmahdi</b> 👨🏻‍💻</span><br
+    />
+    <span id="span--position">✌️ Full Stack Developer</span>
+  </p>
+  <div id="div--down">
+    <a href="#about" title="scroll down">👇</a>
+  </div>
 </main>
 
 <script>
-	import Typed from 'typed.js';
-		
-	const typed = new Typed('#span--position', {
-	strings: ["🎨 Frontend Developer","🛠 Backend Developer", "✌️ Full Stack Developer"],
-	typeSpeed: 30,
-	loop:true
-	});
+  import Typed from "typed.js";
+
+  const typed = new Typed("#span--position", {
+    strings: [
+      "🎨 Frontend Developer",
+      "🛠 Backend Developer",
+      "✌️ Full Stack Developer",
+    ],
+    typeSpeed: 30,
+    loop: true,
+  });
 </script>

@@ -1,27 +1,30 @@
 ---
-import Card from '../../components/card/index.astro';
-import projects from '../../data/projects.json';
-import about from '../../data/about.json';
-import './style.scss';
-import './style-mobile.scss';
-let url_name="";
+import Card from "../../components/card/index.astro";
+import projects from "../../data/projects.json";
+import about from "../../data/about.json";
+import "./style.scss";
+import "./style-mobile.scss";
+let url_name = "";
 ---
 
 <main id="portfolio">
-	<ul class="ul--cardgrid" role="list">
-		{projects.map((project, index) => {
-			url_name=project.label.split(' ').join('');
+  <ul class="ul--cardgrid" role="list">
+    {
+      projects.map((project, index) => {
+        url_name = project.label.split(" ").join("");
 
-			return <Card
-				index={index}
-				imgSrc={`/portfolio/${url_name}.webp`}
-				urlVisit={about.url.githubPage+url_name}
-				urlGithub={about.url.githubSource+url_name }
-				label={project.label}
-				description={project.description}
-				skills={project.skills}
-			/>
-		}
-		)}
-	</ul>
+        return (
+          <Card
+            index={index}
+            imgSrc={`/portfolio/${url_name}.webp`}
+            urlVisit={about.url.githubPage + url_name}
+            urlGithub={about.url.githubSource + url_name}
+            label={project.label}
+            description={project.description}
+            skills={project.skills}
+          />
+        );
+      })
+    }
+  </ul>
 </main>

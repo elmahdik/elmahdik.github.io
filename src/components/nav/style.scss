@@ -1,29 +1,38 @@
-
 .nav--bar {
   background-color: var(--color-white);
-  border-bottom: 2px solid var(--color-black);
-  // box-shadow: 0px 2px 4px var(--color-white);
+  border-bottom: 1px solid var(--color-black);
+  box-shadow: 0px 2px 4px var(--color-grey);
+
   position: sticky;
   top: 0px;
   left: 0px;
   right: 0px;
   z-index: 200;
-  // width: fit-content;
-  width: calc(100%);
   margin: 0 auto;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   transition: 0.2s;
+
+  div {
+    display: flex;
+  }
 
   &.hidden {
     opacity: 0;
   }
-  a {
-    // background-color: var(--color-white);
+  #p--name {
     color: var(--color-black);
-    font-size: 16px;
-    padding: 20px;
+    font-size: 28px;
+    margin: 10px;
+    font-weight: bold;
+  }
+  a {
+    color: var(--color-black);
+    font-size: 18px;
+    padding: 25px;
+
+    font-weight: bold;
     text-decoration: none;
     display: inline-block;
     text-transform: capitalize;
@@ -32,11 +41,11 @@
 
     &.active {
       background-color: var(--color-black);
-      color: var(--color-white) !important;
+      color: var(--color-white);
     }
 
-    &:hover {
-      color: var(--color-gray);
+    &:hover:not(.active) {
+      background-color: rgba(0, 0, 0, 0.1);
     }
   }
 }

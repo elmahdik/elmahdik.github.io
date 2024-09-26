@@ -1,41 +1,59 @@
 ---
-import './style.scss';
-import './style-mobile.scss';
-import ThemeIcon from '../themeIcon/index.astro';
-import ButtonUp from '../buttonUp/index.astro';
-import about from '../../data/about.json';
-const links =[{
-	"label":"LinkedIn",
-	"href":about.url.linkedin
-},{
-	"label":"Github",
-	"href":about.url.githubSource
-},{
-	"label":"Discord",
-	"href":about.url.discord
-},{
-	"label":"WhatsApp",
-	"href":about.url.whatsapp
-}]
+import "./style.scss";
+import "./style-mobile.scss";
+import ThemeIcon from "../themeIcon/index.astro";
+import ButtonUp from "../buttonUp/index.astro";
+import about from "../../data/about.json";
+const links = [
+  {
+    label: "LinkedIn",
+    href: about.url.linkedin,
+  },
+  {
+    label: "Github",
+    href: about.url.githubSource,
+  },
+  {
+    label: "Discord",
+    href: about.url.discord,
+  },
+  {
+    label: "WhatsApp",
+    href: about.url.whatsapp,
+  },
+];
 ---
+
 <footer>
-    <div id="div--contact">
-        <p>Get In Touch.</p>
-        <nav>
-            <a href={`mailto:${about.contact.email}?subject=Hi&body=Hello Elmahdi !`}>Email : {about.contact.email}</a>
-            <a href={`tel:${about.contact.phone}`}>Phone : {about.contact.phone}</a>
-        </nav>
-    </div>
-    <div id="div--copyright">
-        <a href="/">©2025 Elmahdi Korfed</a>
-    </div>
-    <div id="div--links">
-        <nav>
-			{links.map(link=>{return <a href={link?.href} target="_blank"><i class={`bi bi-${link?.label.toLowerCase()}`}></i></a>})}
-        </nav>
-        <ButtonUp />
-        <nav>
-            <ThemeIcon />
-        </nav>
-    </div>
+  <div id="div--contact">
+    <p>Get In Touch.</p>
+    <nav>
+      <a href={`mailto:${about.contact.email}?subject=Hi&body=Hello Elmahdi !`}
+        >Email : {about.contact.email}</a
+      >
+      <a href={`tel:${about.contact.phone}`}
+        >Phone : {about.contact.phone.match(/.{1,3}/g)?.join(" ")}</a
+      >
+    </nav>
+  </div>
+  <div id="div--copyright">
+    <a href="/">© 2025 Elmahdi Korfed</a>
+  </div>
+  <div id="div--links">
+    <nav>
+      {
+        links.map((link) => {
+          return (
+            <a href={link?.href} target="_blank">
+              <i class={`bi bi-${link?.label.toLowerCase()}`} />
+            </a>
+          );
+        })
+      }
+    </nav>
+    <ButtonUp />
+    <nav>
+      <ThemeIcon />
+    </nav>
+  </div>
 </footer>

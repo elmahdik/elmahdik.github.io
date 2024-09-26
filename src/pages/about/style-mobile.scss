@@ -1,19 +1,13 @@
 @media (width <= 1260px) {
   #about {
     flex-direction: column;
-    
-    .div--skills {
 
+    .div--skills {
       a {
         width: calc(25% - 4px) !important;
       }
-
-      span {
-
-      }
     }
     .div--about {
-  
       p {
         font-size: 16px;
       }

@@ -1,10 +1,15 @@
 @media (width <= 1260px) {
     .nav--bar {
+        flex-direction: column;
+
+        #p--name {
+            padding: 20px;
+        }
 
         a {
             flex: 1;
 
-            span{
+            span {
                 display: none;
             }
         }

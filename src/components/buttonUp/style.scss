@@ -1,11 +1,11 @@
-#a--up{
-    color: var(--color-white);
-    margin:0px 20px;
+#a--up {
+    color: var(--color-black);
+    margin: 0px 20px;
     font-size: 44px;
     display: inline-block;
     text-decoration: none;
 
-    &:hover{
+    &:hover {
         color: var(--color-gray);
     }
 }

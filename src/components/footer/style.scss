@@ -1,55 +1,55 @@
 footer {
-    background-color: var(--color-black);
+    background-color: var(--color-white);
 
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 
-    div{
+    div {
         padding: 40px;
-        flex:1;
+        flex: 1;
 
         &#div--contact {
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
 
-            p{
-                color: var(--color-white);
+            p {
+                color: var(--color-black);
                 font-size: 18px;
                 margin-bottom: 20px;
                 font-weight: bold;
             }
 
-            nav{
+            nav {
                 display: flex;
                 flex-direction: column;
-                gap:4px;
+                gap: 4px;
 
-                a{
+                a {
                     font-size: 14px;
                     color: var(--color-gray);
                     text-decoration: none;
 
-                    &:hover{
-                        color:var(--color-white);
+                    &:hover {
+                        color: var(--color-black);
                     }
                 }
             }
         }
 
-        &#div--copyright{
+        &#div--copyright {
             display: flex;
             justify-content: center;
             align-items: center;
 
             a {
                 font-size: 14px;
-                color:var(--color-gray);
+                color: var(--color-gray);
                 text-decoration: none;
 
-                &:hover{
-                    color:var(--color-white);
+                &:hover {
+                    color: var(--color-black);
                 }
             }
         }
@@ -59,25 +59,25 @@ footer {
             justify-content: flex-end;
             align-items: center;
 
-            nav{
+            nav {
                 display: flex;
-                gap:10px;
+                gap: 10px;
 
-                a{
+                a {
                     background-color: var(--color-white);
                     color: var(--color-black);
                     border: 1px solid var(--color-black);
                     outline: 2px solid var(--color-white);
                     font-size: 18px;
                     padding: 10px;
-    
+
                     &:hover {
-                      background-color: var(--color-black);
-                      color: var(--color-white);
-                      border: 1px solid var(--color-white);
-                      outline: 2px solid var(--color-black);
+                        background-color: var(--color-black);
+                        color: var(--color-white);
+                        border: 1px solid var(--color-white);
+                        outline: 2px solid var(--color-black);
                     }
-                } 
+                }
             }
         }
     }

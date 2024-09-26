@@ -1,36 +1,18 @@
-@use "sass:math";
-
-#home {    
+#home {
     overflow: hidden;
 
-    ul {
-        z-index: -1;
+    #div--down {
+        opacity: 0;
         position: absolute;
-        top:0px;
-        left: 0px;
-        right: 0px;
-        bottom: 0px;
-        list-style: none;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-content: center;
-        animation: textFlow 30s linear infinite !important;
+        bottom: 80px;
+        animation: scrollDown 2s linear infinite !important;
+        animation-delay: 4s !important;
 
-        li {
-            margin:10px;
+        a {
+            color: var(--color-black);
             padding: 10px;
-
-            span {
-                color:transparent;
-                -webkit-text-stroke: 3px var(--color-black);
-                opacity: 0.07;
-                font-size: 90px;
-                display: inline-block;
-                font-weight: bold;
-                text-align: center;
-                font-style: oblique;
-            }
+            font-size: 36px;
+            text-decoration: none;
         }
     }
 
@@ -42,80 +24,60 @@
     }
 
     p {
-        // span {
-        //     color: var(--color-gray) !important;
-        //     font-size: 32px !important;
-        // }
-        margin:0 auto;
+        margin: 0 auto;
         width: 80%;
+        text-align: center;
 
+        b {
+            background: -webkit-linear-gradient(260deg, #e91e63, #03a9f4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
         span {
             color: var(--color-black);
-            font-size: 62px;
-            width:fit-content;
+            font-size: 56px;
+            width: fit-content;
             justify-self: center;
         }
 
-        #span--position{
+        #span--position {
             color: var(--color-gray);
-            border-bottom: 1px dashed var(--color-gray);
-            font-size: 46px;
+            font-size: 36px;
         }
 
-        #span--location {
-            font-size: 38px;
-        }
-    }
-
-    .fadeIn {
-        span {
-            color: var(--color-black);
-            opacity: 0;
-            transform: translateY(30px);
-            animation: fadeIn 0.2s ease-out forwards;
+        .greetings {
+            animation: greetings 2s linear infinite !important;
+            transform: rotate(0deg);
             display: inline-block;
         }
-        .span-hand {
-            animation-name: greetings !important;
-            animation-iteration-count: infinite !important;
-            animation-duration: 2s !important;
-        }
     }
-    @for $i from 2 through 14 {
-        .fadeIn span:nth-of-type(#{$i}) {
-            $duration: math.div($i - 1, 10);
-            $duration-with-unit: #{$duration}s;
-            animation-delay: $duration-with-unit;
-        }
-    }
-    
-    @keyframes fadeIn {
-        to {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    }
-    
+
     @keyframes greetings {
         0% {
             opacity: 1;
             transform: rotate(0deg);
         }
         50% {
-            transform: rotate(-30deg);
+            transform: rotate(40deg);
         }
         100% {
             opacity: 1;
             transform: rotate(0deg);
         }
     }
-    
-    @keyframes textFlow {
+
+    @keyframes scrollDown {
         0% {
-            top: 0px;
+            opacity: 0.3;
+            bottom: 80px;
+        }
+        50% {
+            opacity: 1;
+            bottom: 40px;
         }
         100% {
-            top: 1000px;
+            opacity: 0.3;
+            bottom: 80px;
         }
     }
 }

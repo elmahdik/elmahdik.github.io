@@ -1,35 +1,58 @@
 ---
-import './style.scss';
-import './style-mobile.scss';
-import about from '../../data/about.json';
-import { Image } from 'astro:assets';
-let imgSrc='';
+import "./style.scss";
+import "./style-mobile.scss";
+import about from "../../data/about.json";
+import { Image } from "astro:assets";
+let imgSrc = "";
 
-const links = [{
-	"label":"Resume",
-	"href":about.url.resume
-}]
+const links = [
+  {
+    label: "Resume",
+    href: about.url.resume,
+  },
+];
 ---
 
 <main id="about">
-	<div class="div--about">
-		<p>{about.bio.split('.').map(sentence => <span>{sentence}.</span>)}</p>
-		<nav>
-			{links.map(link=>{return <a href={link.href} title={link.label} target="_blank"><i class="bi bi-file-pdf"></i> {link.label}</a>})}
-		</nav>
-	</div>
-	<div class="div--skills">
-		<nav>
-			{about.skills.map(skill => {
-				imgSrc=`/skills/${skill.label}.png`;
-				return (
-					<a href={skill.link} title={skill.label} target="_blank">
-						<Image src={imgSrc} width="100" height="100" style="width:100%;height:auto;" title={skill.label} alt={skill.label} />
-						<span>{skill.label}</span>
-					</a>
-				);
-			})
-			}
-		</nav>
-	</div>
+  <div class="div--about">
+    <p>{about.bio.split(".").map((sentence) => <span>{sentence}</span>)}</p>
+    <nav>
+      {
+        links.map((link) => {
+          return (
+            <a href={link.href} title={link.label} target="_blank">
+              <i class="bi bi-file-pdf" /> {link.label}
+            </a>
+          );
+        })
+      }
+    </nav>
+  </div>
+  <div class="div--skills">
+    <nav>
+      {
+        about.skills.map((skill) => {
+          imgSrc = `/skills/${skill.label}.png`;
+          return (
+            <a
+              href={skill.link}
+              title={skill.label}
+              target="_blank"
+              class="fadeIn"
+            >
+              <Image
+                src={imgSrc}
+                width="100"
+                height="100"
+                style="width:100%;height:auto;"
+                title={skill.label}
+                alt={skill.label}
+              />
+              <span>{skill.label}</span>
+            </a>
+          );
+        })
+      }
+    </nav>
+  </div>
 </main>

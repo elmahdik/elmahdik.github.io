@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  
+
   p {
     color: var(--color-black);
     font-size: 38px;
@@ -27,12 +27,12 @@
         padding: 4px;
         display: inline-block;
       }
-      
+
       #input-answer {
         padding: 10px;
         width: 100px;
       }
-     
+
       button {
         background-color: var(--color-black);
         color: var(--color-white);
@@ -41,7 +41,7 @@
 
         font-size: 16px;
         padding: 10px 20px;
-        margin:4px;
+        margin: 4px;
         text-transform: capitalize;
         cursor: pointer;
 
@@ -59,8 +59,9 @@
       resize: vertical;
     }
 
-    input, textarea {
-      background: rgba(0, 0, 0, 0.05);
+    input,
+    textarea {
+      background-color: rgba(0, 0, 0, 0.05);
       border: 1px solid var(--color-lightgray);
       color: var(--color-black);
       font-size: 18px;

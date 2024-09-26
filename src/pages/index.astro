@@ -1,36 +1,38 @@
 ---
-import Layout from '../layouts/index.astro';
-import Home from './home/index.astro';
-import About from './about/index.astro';
-import Portfolio from './portfolio/index.astro';
-import Contact from './contact/index.astro';
-import Nav from '../components/nav/index.astro';
-import Footer from '../components/footer/index.astro';
+import Layout from "../layouts/index.astro";
+import Home from "./home/index.astro";
+import About from "./about/index.astro";
+import Portfolio from "./portfolio/index.astro";
+import Contact from "./contact/index.astro";
+import Nav from "../components/nav/index.astro";
+import Footer from "../components/footer/index.astro";
 ---
 
 <Layout title="Home">
-    <Home />
-    <section>
-        <Nav />
-        <About />
-        <Portfolio />
-        <Contact />
-    </section>
-    <Footer />
+  <Home />
+  <section>
+    <Nav />
+    <About />
+    <Portfolio />
+    <Contact />
+  </section>
+  <Footer />
 </Layout>
 
 <script is:inline>
   // theme
   const theme = (() => {
-    if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) return localStorage.getItem('theme');
-    if (window.matchMedia('(prefers-color-scheme: dark)').matches) return 'dark';
-    return 'light';
+    if (typeof localStorage !== "undefined" && localStorage.getItem("theme"))
+      return localStorage.getItem("theme");
+    if (window.matchMedia("(prefers-color-scheme: dark)").matches)
+      return "dark";
+    return "light";
   })();
 
-  if (theme === 'light') document.documentElement.classList.remove('dark');
-  else document.documentElement.classList.add('dark');
+  if (theme === "light") document.documentElement.classList.remove("dark");
+  else document.documentElement.classList.add("dark");
 
-  window.localStorage.setItem('theme', theme);
+  window.localStorage.setItem("theme", theme);
 
   const handleToggleClick = () => {
     const element = document.documentElement;
@@ -38,7 +40,9 @@ import Footer from '../components/footer/index.astro';
 
     const isDark = element.classList.contains("dark");
     localStorage.setItem("theme", isDark ? "dark" : "light");
-  }
+  };
 
-  Object.values(document.getElementsByClassName("themeToggle")).forEach(themeIcon => themeIcon.addEventListener("click", handleToggleClick));
+  Object.values(document.getElementsByClassName("themeToggle")).forEach(
+    (themeIcon) => themeIcon.addEventListener("click", handleToggleClick)
+  );
 </script>

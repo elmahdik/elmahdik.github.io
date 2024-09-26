@@ -1,18 +1,32 @@
 #themeToggle {
     cursor: pointer;
-    
+
     &:hover {
         background: var(--color-black);
 
-        .moon, .sun { fill: var(--color-white); }
+        .moon,
+        .sun {
+            fill: var(--color-white);
+        }
     }
-    
-    .moon, .sun { fill: var(--color-black); }
-    .moon { display:block; }
-    .sun { display:none; }
+
+    .moon,
+    .sun {
+        fill: var(--color-black);
+    }
+    .moon {
+        display: block;
+    }
+    .sun {
+        display: none;
+    }
 }
 
-html.dark{
-    .moon { display:none !important; }
-    .sun { display:block !important; }
+html.dark {
+    .moon {
+        display: none !important;
+    }
+    .sun {
+        display: block !important;
+    }
 }
