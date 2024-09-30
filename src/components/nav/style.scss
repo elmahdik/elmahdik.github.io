@@ -1,6 +1,5 @@
 .nav--bar {
   background-color: var(--color-white);
-  border-bottom: 1px solid var(--color-black);
   box-shadow: 0px 2px 4px var(--color-grey);
 
   position: sticky;
@@ -10,7 +9,7 @@
   z-index: 200;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   transition: 0.2s;
 
@@ -21,12 +20,7 @@
   &.hidden {
     opacity: 0;
   }
-  #p--name {
-    color: var(--color-black);
-    font-size: 28px;
-    margin: 10px;
-    font-weight: bold;
-  }
+  
   a {
     color: var(--color-black);
     font-size: 18px;
