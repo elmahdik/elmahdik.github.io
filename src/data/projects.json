@@ -1,5 +1,13 @@
 [
     {
+        "label": "luxurycars",
+        "description": "The goal of this project is to reproduce a personalized model (png) (images/text) in HTML/CSS format | 🎨 🏎 ",
+        "skills": [
+            "html",
+            "css"
+        ]
+    },
+    {
         "label": "solidjs-retrogame",
         "description": "SolidJS-Retrogame is a retro game platform developed with the SolidJS library | 🎮 🕹 😎",
         "skills": [

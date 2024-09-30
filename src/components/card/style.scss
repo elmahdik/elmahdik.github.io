@@ -1,8 +1,9 @@
 .li--card {
   background-color: var(--color-white);
-  border: 1px solid var(--color-grey);
-  width: calc(25% - 20px);
-  margin: 10px;
+  box-shadow: 0px 2px 4px var(--color-grey);
+  // border: 1px solid var(--color-black);
+  width: calc(33.33% - 40px);
+  margin: 20px;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -16,8 +17,7 @@
 
   h2 {
     color: var(--color-black);
-    margin-top: 20px;
-    text-align: center;
+    text-align: right;
   }
 
   .div-img {
@@ -29,6 +29,7 @@
     img {
       height: 20vh;
       max-width: 100%;
+      margin: 20px 0px;
       transition: 2s;
       object-fit: cover;
       align-self: center;

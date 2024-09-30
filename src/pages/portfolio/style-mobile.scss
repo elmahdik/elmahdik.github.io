@@ -1,2 +1,16 @@
+@media (width <= 1400px) {
+    #portfolio {
+        .ul--cardgrid {
+            width: calc(90% - 0px);
+        }
+    }
+}
+
+
 @media (width <= 1260px) {
+    #portfolio {
+        .ul--cardgrid {
+            width: calc(100% - 0px);
+        }
+    }
 }
