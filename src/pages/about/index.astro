@@ -32,7 +32,7 @@ const links = [
     <nav>
       {
         about.skills.map((skill) => {
-          imgSrc = `/skills/${skill.label}.png`;
+          imgSrc = `/skills/${skill.label.toLowerCase()}.png`;
           return (
             <a
               href={skill.link}
