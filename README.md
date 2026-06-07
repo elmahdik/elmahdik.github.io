@@ -2,8 +2,17 @@
   <img src="/public/screenshot.webp" />
 </p>
 
-## Welcome!
+---
 
-Passionate about the web, I created this website to share with you my latest personal achievements.
-If you have any suggestions don't hesitate to contact me.
-Have a good visit!
+# Welcome to my portfolio !
+
+This project containing web application links, contact details and my Resume.
+
+## 📧 Contact
+
+Want to know more about me or discuss a collaboration? Don't hesitate to contact me! You'll find my contact information and social media in this section. I'd love to discuss future opportunities with you.
+
+- **Mail**: [elmahdikorfed@gmail.com](mailto:elmahdikorfed@gmail.com)
+- **LinkedIn**: [https://www.linkedin.com/in/elmahdikorfed/](https://www.linkedin.com/in/elmahdikorfed/)
+
+---
