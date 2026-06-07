@@ -8,6 +8,15 @@
       }
     }
     .div--about {
+      flex-direction: column;
+      border:none;
+      // margin-bottom: 20px;
+
+      .img-profile {
+        margin: 0 auto;
+        width: 200px;
+        border-radius: 50%;
+      }
       p {
         font-size: 16px;
       }

@@ -3,6 +3,7 @@
     "lastname": "Korfed",
     "sentence": "Welcome",
     "bio": "Passionate about the web, I had the opportunity to work in various fields as a web/mobile developer - back and front: private company, public research laboratory, startup and individuals. I created this website in order to share with you some of my personal web projects. Have a great visit !",
+    "bio2":"Here you can get a quick overview of my background, projects, and contact information. This portfolio was designed to give you a clear idea of ​​who I am and what I do.",
     "url": {
         "resume": "/cv/resume-KORFED.pdf",
         "linkedin": "https://linkedin.com/in/elmahdikorfed",
@@ -106,7 +107,7 @@
         }
     ],
     "contact": {
-        "email": "elmahdi.korfed@gmail.com",
+        "email": "elmahdikorfed@gmail.com",
         "phone": "+33686089808"
     }
 }

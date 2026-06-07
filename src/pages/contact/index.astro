@@ -1,12 +1,13 @@
 ---
 import "./style.scss";
 import "./style-mobile.scss";
+import Footer from "../../components/footer/index.astro";
 ---
 
 <main id="contact">
-  <p>✍️ Contact</p>
+  <p class="p-supertitle">✍️ Contact</p>
   <form method="POST" name="contact" id="form_contact">
-    <input type="text" name="name" placeholder="Name *" required />
+    <!-- <input type="text" name="name" placeholder="Name *" required /> -->
     <input type="email" name="email" placeholder="Email *" required />
     <textarea placeholder="Write your message" name="message" required
       >Hello Elmahdi,
@@ -23,6 +24,7 @@ import "./style-mobile.scss";
       <button id="btn-submit">send <i class="bi bi-send"></i></button>
     </div>
   </form>
+  <Footer />
 </main>
 
 <script>

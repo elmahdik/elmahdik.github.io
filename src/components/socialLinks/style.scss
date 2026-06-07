@@ -1,0 +1,19 @@
+nav.nav--links {
+  display: flex;
+
+  a {
+    // background-color: var(--color-black);
+    color: var(--color-white);
+    // border: 1px solid var(--color-black);
+    // outline: 2px solid var(--color-white);
+    font-size: 18px;
+    padding: 10px;
+
+    &:hover {
+      background-color: var(--color-white);
+      color: var(--color-black);
+      //   border: 1px solid var(--color-white);
+      //   outline: 2px solid var(--color-black);
+    }
+  }
+}

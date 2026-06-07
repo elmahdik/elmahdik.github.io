@@ -1,13 +1,17 @@
 .li--card {
-  background-color: var(--color-white);
-  box-shadow: 0px 2px 4px var(--color-grey);
+  // background-color: var(--color-white);
+  box-shadow: 0px 0px 0.4px 0.1px var(--color-black);
+  background-color: rgba(255, 255, 255, 0.05);
+  // box-shadow: 0px 2px 4px var(--color-grey);
+  // border: 0.1px solid var(--color-gray);
   // border: 1px solid var(--color-black);
-  width: calc(33.33% - 40px);
-  margin: 20px;
-  padding: 20px;
+  width: calc(33.33% - 4rem);
+  margin: 2rem;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   position: relative;
+  // padding: 10px;
 
   &:hover {
     img {
@@ -17,7 +21,8 @@
 
   h2 {
     color: var(--color-black);
-    text-align: right;
+    font-weight: 700;
+    // border-bottom: .1px solid var(--color-grey);
   }
 
   .div-img {
@@ -29,8 +34,9 @@
     img {
       height: 20vh;
       max-width: 100%;
-      margin: 20px 0px;
-      transition: 2s;
+      // margin: 20px 0px;
+      margin-bottom: 20px;
+      transition: 0.2s;
       object-fit: cover;
       align-self: center;
       object-position: top;
@@ -43,6 +49,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    // align-items: center;
+    position: relative;
 
     ul {
       list-style: none;
@@ -63,16 +71,24 @@
     }
 
     .div-infos-content {
+      // backdrop-filter: blur(8px);
+      // background: linear-gradient(357deg, var(--color-white), transparent);
       gap: 20px;
       flex: 1;
       display: flex;
       flex-direction: column;
-      justify-content: flex-end;
+      justify-content: space-between;
+      align-items: center;
+
+      // position: absolute;
+      top: 0px;
+      bottom: 0px;
+      width: 100%;
 
       p {
         color: var(--color-black);
         font-size: 16px;
-        padding: 10px;
+        padding: 20px;
       }
 
       iframe {

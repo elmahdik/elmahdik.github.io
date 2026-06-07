@@ -3,18 +3,21 @@
   flex-direction: column;
   position: relative;
 
-  p {
-    color: var(--color-black);
-    font-size: 38px;
-    font-weight: bold;
-  }
+  // p {
+  //   color: var(--color-black);
+  //   font-size: 38px;
+  //   font-weight: bold;
+  // }
 
   form {
-    padding-top: 20px;
+  box-shadow: 0px 0px 0.4px 0.1px var(--color-black);
+  background-color: rgba(255, 255, 255, 0.05);
+
+    padding: 40px;
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    width: calc(60% - 200px);
+    width: calc(60%);
 
     div {
       display: flex;

@@ -7,28 +7,37 @@ let imgSrc = "";
 
 const links = [
   {
-    label: "Resume",
-    href: about.url.resume,
+    label: "View Projects",
+    href: "#portfolio",
+  },
+  {
+    label: "Contact me",
+    href: "#contact",
   },
 ];
 ---
 
 <main id="about">
   <div class="div--about">
-    <p>{about.bio.split(".").map((sentence) => <span>{sentence}</span>)}</p>
-    <nav>
-      {
-        links.map((link) => {
-          return (
-            <a href={link.href} title={link.label} target="_blank">
-              <i class="bi bi-file-pdf" /> {link.label}
-            </a>
-          );
-        })
-      }
-    </nav>
+    <img src="./ek.png" class="img-profile" />
+    <div class="div-infos">
+      <h1>Welcome! 👋</h1>
+      <p>{about.bio2.split(".").map((sentence) => <span>{sentence}</span>)}</p>
+      <nav>
+        {
+          links.map((link) => {
+            return (
+              <a href={link.href} title={link.label}>
+                {/* <i class="bi bi-file-pdf" />  */}
+                {link.label}
+              </a>
+            );
+          })
+        }
+      </nav>
+    </div>
   </div>
-  <div class="div--skills">
+  <!-- <div class="div--skills">
     <nav>
       {
         about.skills.map((skill) => {
@@ -54,5 +63,5 @@ const links = [
         })
       }
     </nav>
-  </div>
+  </div> -->
 </main>

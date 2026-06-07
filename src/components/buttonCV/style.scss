@@ -1,0 +1,10 @@
+a.a-resume {
+    background-color: darkred;
+    color: #fff;
+    // border-radius: 12px;
+    // text-decoration: none;
+    text-transform: uppercase;
+    &:hover {
+        background-color: red !important;
+    }
+}

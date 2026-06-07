@@ -1,35 +1,89 @@
-.nav--bar {
-  background-color: var(--color-white);
-  box-shadow: 0px 2px 4px var(--color-grey);
+.p-name {
+  // background-color: var(--color-black);
+  color: var(--color-black);
+  font-weight: 200;
+  font-size: 32px;
+  padding: 10px;
+  text-align: center;
 
-  position: sticky;
+  span.sp-dot {
+    background: darkred;
+    margin-left: 10px;
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+  }
+
+  span.sidebar-title {
+    font-size: 12px;
+    margin-top: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}
+.nav--bar {
+  header {
+    // background-color: var(--color-white);
+    background-color: rgba(0, 0, 0, 0.01);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100vw;
+    align-items: center;
+
+    a {
+      border-left: .1px solid var(--color-black);
+      color: var(--color-black);
+      text-decoration: none;
+      padding: 10px;
+      text-transform: lowercase;
+      text-align: center;
+    }
+  }
+  // background-color: var(--color-white);
+  // box-shadow: 0px 2px 4px var(--color-grey);
+  // border-bottom: .1px solid var(--color-black);
+  // box-shadow: 0px 0.2px 0.4px var(--color-black);
+  box-shadow: 0px 0px 0.4px 0.1px var(--color-white);
+  backdrop-filter: blur(8px);
+  // padding: 10px;
+
+  // position: sticky;
+  position: fixed;
   top: 0px;
   left: 0px;
   right: 0px;
   z-index: 200;
   margin: 0 auto;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: 0.2s;
+  flex-direction: column;
+  justify-content: space-around;
+  // align-items: center;
+  // transition: 0.2s;
 
   div {
     display: flex;
+    // flex-direction: row;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
   }
 
   &.hidden {
     opacity: 0;
   }
-  
+
   a {
     color: var(--color-black);
-    font-size: 18px;
-    padding: 25px;
+    font-size: 14px;
+    padding: 14px 24px;
+    letter-spacing: 2px;
 
-    font-weight: bold;
+    font-weight: 200;
     text-decoration: none;
     display: inline-block;
-    text-transform: capitalize;
+    text-transform: uppercase;
     text-align: center;
     cursor: pointer;
 

@@ -1,32 +1,48 @@
 #themeToggle {
-    cursor: pointer;
+  cursor: pointer;
 
-    &:hover {
-        background: var(--color-black);
+  svg {
+    width: 24px;
+    height: 24px;
+    position: relative;
+  }
 
-        .moon,
-        .sun {
-            fill: var(--color-white);
-        }
-    }
+  &:hover {
+    background: transparent;
 
     .moon,
     .sun {
-        fill: var(--color-black);
+      //   fill: var(--color-white);
     }
-    .moon {
-        display: block;
-    }
-    .sun {
-        display: none;
-    }
+  }
+
+  .moon,
+  .sun {
+    fill: var(--color-black);
+
+    transition:
+      transform 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+      opacity 0.3s ease;
+    transform-origin: center;
+  }
+}
+
+.moon {
+  transform: translateY(100%);
+  opacity: 0;
+}
+.sun {
+  transform: translateY(0);
+  opacity: 1;
 }
 
 html.dark {
-    .moon {
-        display: none !important;
-    }
-    .sun {
-        display: block !important;
-    }
+  .moon {
+    transform: translateY(0%) !important;
+    opacity: 1;
+  }
+  .sun {
+    transform: translateY(-100%) !important;
+    opacity: 0;
+  }
 }

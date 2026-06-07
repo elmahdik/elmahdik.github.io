@@ -1,0 +1,33 @@
+---
+import "./style.scss";
+import about from "../../data/about.json";
+const links = [
+  {
+    label: "LinkedIn",
+    href: about.url.linkedin,
+  },
+  {
+    label: "Github",
+    href: about.url.githubSource,
+  },
+  {
+    label: "Discord",
+    href: about.url.discord,
+  },
+  {
+    label: "WhatsApp",
+    href: about.url.whatsapp,
+  },
+];
+---
+    <nav class="nav--links">
+      {
+        links.map((link) => {
+          return (
+            <a href={link?.href} target="_blank">
+              <i class={`bi bi-${link?.label.toLowerCase()}`} />
+            </a>
+          );
+        })
+      }
+    </nav>

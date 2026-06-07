@@ -1,8 +1,9 @@
 @import url("../../node_modules/bootstrap-icons/font/bootstrap-icons.css");
 
 :root {
-  --color-black: #2e314c;
-  --color-white: #fff;
+  // --color-black: #2e314c;
+  --color-black: #111948;
+  --color-white: #fafafa;
   --color-gray: #999;
   --color-grey: #aaa;
   --color-lightgray: #ddd;
@@ -16,7 +17,8 @@
   border: 0px;
   box-sizing: border-box;
   border-collapse: collapse;
-  font-family: Arial, Helvetica, sans-serif;
+  // font-family: Arial, Helvetica, sans-serif;
+  font-family: Figtree, sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -25,8 +27,8 @@ html {
 
   /* ---- darkMode ---- */
   &.dark {
-    --color-black: #fff !important;
-    --color-white: #2e314c !important;
+    --color-black: #fafafa !important;
+    --color-white: #111948 !important;
     --color-grey: #000 !important;
     --color-black-one: #111 !important;
     --color-black-four: #444 !important;
@@ -42,7 +44,9 @@ html {
   }
 
   main {
+    width: 80vw;
     margin: auto;
+    // margin-top:20px;
     min-height: 100vh;
     line-height: 1.6;
     display: flex;
@@ -52,9 +56,22 @@ html {
     position: relative;
     // scroll-snap-align: start;
     // scroll-snap-stop: always;
+    // padding: 120px;
 
     canvas {
       position: absolute;
     }
+  }
+  p.p-supertitle {
+    color: var(--color-black);
+    border-bottom: 0.1px solid var(--color-black);
+    width: 100%;
+    font-size: 42px;
+    font-weight: 200;
+    // padding: 0px 40px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-transform: uppercase;
+    text-align: center;
   }
 }

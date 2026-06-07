@@ -2,12 +2,16 @@
 import "./style.scss";
 import "./style-mobile.scss";
 import ThemeIcon from "../themeIcon/index.astro";
+import Lang from "../lang/index.astro";
+import ButtonCV from "../buttonCV/index.astro";
+import about from "../../data/about.json";
+import SocialLinks from "../socialLinks/index.astro"
 
 const menuItems = [
-  {
-    label: "home",
-    icon: "house",
-  },
+  // {
+  //   label: "home",
+  //   icon: "house",
+  // },
   {
     label: "about",
     icon: "person",
@@ -20,21 +24,43 @@ const menuItems = [
     label: "contact",
     icon: "envelope",
   },
+  {
+    label: "blog",
+    icon: "pen",
+  },
 ];
 ---
 
-<nav id="nav--bar" class="nav--bar">
+<div id="nav--bar" class="nav--bar">
+  <!-- <p class="p-name">Elmahdi KORFED</p> -->
+
+  <header>
+    <SocialLinks />
+    <a>{about.contact.email}</a>
+    <a>{about.contact.phone}</a>
+  </header>
   <div>
-    {
-      menuItems.map((item) => (
-        <a href={`#` + item.label} id={`a-` + item.label} title={item.label}>
-          <i class={`bi bi-${item.icon}`} /> <span>{item.label}</span>
-        </a>
-      ))
-    }
-    <ThemeIcon />
+    <p class="p-name">
+      Elmahdi KORFED<span class="sp-dot"></span>
+      <br /><span class="sidebar-title"> Web Developer</span>
+    </p>
+
+    <nav>
+      {
+        menuItems.map((item) => (
+          <a href={`#` + item.label} id={`a-` + item.label} title={item.label}>
+            <i class={`bi bi-${item.icon}`} /> <span>{item.label}</span>
+          </a>
+        ))
+      }
+    </nav>
+    <div>
+      <Lang />
+      <ThemeIcon />
+      <ButtonCV />
+    </div>
   </div>
-</nav>
+</div>
 
 <script>
   let navBar = document.querySelector("#nav--bar");
@@ -70,7 +96,7 @@ const menuItems = [
   // }, false);
 
   window.onscroll = function () {
-    myFunction();
+    // myFunction();
   };
 
   function myFunction() {

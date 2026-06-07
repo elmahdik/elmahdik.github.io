@@ -4,24 +4,7 @@ import "./style-mobile.scss";
 import ThemeIcon from "../themeIcon/index.astro";
 import ButtonUp from "../buttonUp/index.astro";
 import about from "../../data/about.json";
-const links = [
-  {
-    label: "LinkedIn",
-    href: about.url.linkedin,
-  },
-  {
-    label: "Github",
-    href: about.url.githubSource,
-  },
-  {
-    label: "Discord",
-    href: about.url.discord,
-  },
-  {
-    label: "WhatsApp",
-    href: about.url.whatsapp,
-  },
-];
+import SocialLinks from "../socialLinks/index.astro"
 ---
 
 <footer>
@@ -37,20 +20,10 @@ const links = [
     </nav>
   </div>
   <div id="div--copyright">
-    <a href="/">© 2025 Elmahdi Korfed</a>
+    <a href="/">© 2026 Elmahdi KORFED</a>
   </div>
   <div id="div--links">
-    <nav>
-      {
-        links.map((link) => {
-          return (
-            <a href={link?.href} target="_blank">
-              <i class={`bi bi-${link?.label.toLowerCase()}`} />
-            </a>
-          );
-        })
-      }
-    </nav>
+    <SocialLinks />
     <ButtonUp />
     <nav>
       <ThemeIcon />
