@@ -1,13 +1,22 @@
 @media (width <= 1260px) {
-    .nav--bar {
-        flex-direction: column;
+  .nav--bar {
+    // display : none;
+    flex-direction: column;
 
-        a {
-            flex: 1;
+    a {
+      flex: 1;
 
-            span {
-                display: none;
-            }
-        }
+      span {
+        display: none;
+      }
     }
+    div,
+    header {
+      flex-direction: column;
+    }
+    div nav {
+      display: flex;
+      flex-direction: column;
+    }
+  }
 }
